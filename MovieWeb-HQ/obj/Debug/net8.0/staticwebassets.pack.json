@@ -1,0 +1,437 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\MovieWeb-HQ.bundle.scp.css",
+      "PackagePath": "staticwebassets\\MovieWeb-HQ.bundle.scp.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\KongDaoDauLau.ts",
+      "PackagePath": "staticwebassets\\Movie\\KongDaoDauLau.ts"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\NaTraMaDong.ts",
+      "PackagePath": "staticwebassets\\Movie\\NaTraMaDong.ts"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\TamCamMovie.ts",
+      "PackagePath": "staticwebassets\\Movie\\TamCamMovie.ts"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\ThorLoveAndThunder.ts",
+      "PackagePath": "staticwebassets\\Movie\\ThorLoveAndThunder.ts"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\Jhon Wick.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Jhon Wick.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\KGF.jpg",
+      "PackagePath": "staticwebassets\\uploads\\KGF.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\ant man.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ant man.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\ant man1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\ant man1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\avengers.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avengers.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\avengers1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\avengers1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\collage romance.jpg",
+      "PackagePath": "staticwebassets\\uploads\\collage romance.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\collage romance1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\collage romance1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\eesho.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\eesho.jpeg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\eesho1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eesho1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\eternals.jpg",
+      "PackagePath": "staticwebassets\\uploads\\eternals.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\eternals1.webp",
+      "PackagePath": "staticwebassets\\uploads\\eternals1.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\favicon.png",
+      "PackagePath": "staticwebassets\\uploads\\favicon.png"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\jhon wick1.webp",
+      "PackagePath": "staticwebassets\\uploads\\jhon wick1.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\jurassic world.jpg",
+      "PackagePath": "staticwebassets\\uploads\\jurassic world.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\jurassic world1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\jurassic world1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\kota factory.jpg",
+      "PackagePath": "staticwebassets\\uploads\\kota factory.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\kota factory1.webp",
+      "PackagePath": "staticwebassets\\uploads\\kota factory1.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\logo.png",
+      "PackagePath": "staticwebassets\\uploads\\logo.png"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\money heist.jpg",
+      "PackagePath": "staticwebassets\\uploads\\money heist.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\money heist1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\money heist1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\moon knight.jpg",
+      "PackagePath": "staticwebassets\\uploads\\moon knight.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\moon knight1.webp",
+      "PackagePath": "staticwebassets\\uploads\\moon knight1.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\onlylogo.png",
+      "PackagePath": "staticwebassets\\uploads\\onlylogo.png"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\spiderman.jpg",
+      "PackagePath": "staticwebassets\\uploads\\spiderman.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\spiderman1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\spiderman1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\the boys.jpg",
+      "PackagePath": "staticwebassets\\uploads\\the boys.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\the boys1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\the boys1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\thor love of thunder.jpg",
+      "PackagePath": "staticwebassets\\uploads\\thor love of thunder.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\thor love of thunder1.avif",
+      "PackagePath": "staticwebassets\\uploads\\thor love of thunder1.avif"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\topgun.jpg",
+      "PackagePath": "staticwebassets\\uploads\\topgun.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\topgun1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\topgun1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\uncharted.webp",
+      "PackagePath": "staticwebassets\\uploads\\uncharted.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\uncharted1.jpg",
+      "PackagePath": "staticwebassets\\uploads\\uncharted1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\user.jpg",
+      "PackagePath": "staticwebassets\\uploads\\user.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\KingCongTrai.mp4",
+      "PackagePath": "staticwebassets\\video\\KingCongTrai.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\john wick.webm",
+      "PackagePath": "staticwebassets\\video\\john wick.webm"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\jurasic world.webm",
+      "PackagePath": "staticwebassets\\video\\jurasic world.webm"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\theboys.webm",
+      "PackagePath": "staticwebassets\\video\\theboys.webm"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MovieWeb-HQ.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.MovieWeb-HQ.props",
+      "PackagePath": "build\\MovieWeb-HQ.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.MovieWeb-HQ.props",
+      "PackagePath": "buildMultiTargeting\\MovieWeb-HQ.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.MovieWeb-HQ.props",
+      "PackagePath": "buildTransitive\\MovieWeb-HQ.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

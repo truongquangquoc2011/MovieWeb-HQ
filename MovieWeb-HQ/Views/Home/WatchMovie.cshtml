@@ -1,0 +1,160 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<style>
+    .fancybox-bg {
+        background: url('/uploads/money heist1.jpg') center/cover no-repeat !important;
+    }
+
+    
+
+    .fancybox-content {
+        border-radius: 15px !important;
+        box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3) !important;
+        background: transparent !important;
+    }
+
+    /* Tùy chỉnh nút đóng Fancybox */
+    .fancybox-button--close {
+        width: 40px !important;
+        height: 40px !important;
+        background: rgba(255, 255, 255, 0.2) !important; /* Màu nền trong suốt */
+        border-radius: 50% !important;
+        display: flex !important;
+        align-items: center !important;
+        justify-content: center !important;
+        transition: all 0.3s ease !important;
+        color: white !important;
+        font-size: 20px !important;
+        top: 15px !important;
+        right: 15px !important;
+    }
+
+        /* Thay đổi biểu tượng nút đóng */
+        .fancybox-button--close svg {
+            display: none; /* Ẩn biểu tượng mặc định */
+        }
+
+        .fancybox-button--close::before {
+            content: "\2715"; /* Unicode cho dấu X */
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        /* Hiệu ứng khi di chuột vào */
+        .fancybox-button--close:hover {
+            background: rgba(255, 0, 0, 0.7); /* Đổi màu nền thành đỏ */
+            transform: scale(1.1);
+        }
+
+
+
+
+
+</style>
+
+
+<!-- 🔹 THÔNG TIN PHIM -->
+@section CustomHeader {
+    <video  id="trailerVideo" src="@Model.TrailerURL" loop></video>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            setTimeout(function () {
+                let video = document.getElementById("trailerVideo");
+                video.play();
+            }, 3000); // Chờ 3 giây rồi phát video
+        });
+    </script>
+}
+<h1 style="font-size:60px" id="title">@Model.Title</h1>
+<p>@Model.Description</p>
+<div class="details">
+    <h6>A Netflix Original Film</h6>
+    <h5 id="gen">@Model.Genre?.GenreName</h5>
+    <h4 id="date">@Model.Year</h4>
+    <h3 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i> @Model.IMDB_Rating</h3>
+
+</div>
+<!-- Nút Xem Phim -->
+<div class="btns">
+    <a href="#" id="play">Watch <i class="bi bi-play-fill"></i></a>
+    <a href="" id="download_main"><i class="bi bi-cloud-arrow-down-fill"></i></a>
+</div>
+
+@section CustomFooter {
+    <section>
+        <h4>Bộ Phim Liên Quan </h4>
+        <i class="bi bi-chevron-left"></i>
+        <i class="bi bi-chevron-right"></i>
+        <div class="cards">
+            @if (ViewBag.RelatedMovies != null && ViewBag.RelatedMovies.Count > 0)
+            {
+                @foreach (var related in ViewBag.RelatedMovies)
+                {
+                    <a href="@Url.Action("WatchMovie", "Home", new { id = related.MovieID })"
+                       class="card"
+                       data-title="@related.Title"
+                       data-genre="@related.Genre?.GenreName"
+                       data-year="@related.Year"
+                       data-rating="@related.IMDB_Rating"
+                       data-trailer="@related.TrailerURL">
+
+                        <img src="@Url.Content("~/"+related.Thumbnail)" alt="@related.Title" class="poster" />
+                        <div class="rest_card">
+                            <img src="@related.Thumbnail" alt="@related.Title" />
+                            <div class="cont">
+                                <h4>@related.Title</h4>
+                                <div class="sub">
+                                    <p>@related.Genre?.GenreName, @related.Year</p>
+                                    <h3><span>IMDB</span><i class="bi bi-star-fill"></i>@related.IMDB_Rating</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                }
+            }
+            else
+            {
+                <p class="text-muted">Không tìm thấy phim liên quan.</p>
+            }
+        </div>
+    </section>
+
+}
+<!-- Bootstrap JS + Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+<!-- JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $("#play").click(function (e) {
+            e.preventDefault(); // Ngăn load trang
+
+            let videoURL = "@Model.VideoURL";
+            if (!videoURL) {
+                alert("Video không khả dụng!");
+                return;
+            }
+
+            $.fancybox.open({
+                src: `<video controls autoplay>
+                        <source src="${videoURL}" type="video/mp4">
+                      </video>`,
+                type: 'html',
+                opts: {
+                    afterShow: function (instance, current) {
+                        $("video")[0].play();
+                    }
+                }
+            });
+        });
+    });
+
+
+</script>

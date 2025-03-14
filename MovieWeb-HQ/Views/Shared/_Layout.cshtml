@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <link rel="shortcut icon" href="~/uploads/favicon.png" type="image/x-icon" />
+    <!-- Bootstrap Icons CDN -->
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <!-- Fancybox CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
+
+    <title>HQ CINEMA</title>
+</head>
+<body>
+    <header>
+        @RenderSection("CustomHeader", required: false)
+        <nav>
+            <div class="logo_ul">
+                <p class="cinema_name">HQ CINEMA</p>
+                <img src="~/uploads/onlylogo.png" alt="" />
+                <ul>
+                    <li><a href="#" id="home">Home</a></li>
+                    <li><a href="#" id="series">Series</a></li>
+                    <li><a href="#" id="movies">Movies</a></li>
+                    <!-- <li><a href="#">Kids</a></li> -->
+                </ul>
+            </div>
+            <div class="search_user">
+                <input type="text" placeholder="Search..." id="search_input" />
+                <div class="dropdown">
+                    <input type="checkbox" id="dropdown-toggle" />
+                    <label for="dropdown-toggle" class="dropbtn">
+                        <img src="/img/user.jpg" alt="">
+                    </label>
+                    <div class="dropdown-content">
+                        <a href="#">PROFILE</a>
+                        <a href="#">LOGOUT</a>
+                    </div>
+                </div>
+                <div class="search">
+                    <!-- <a href="#" class="card">
+                      <img src="img/the boys.jpg" alt="" />
+                      <div class="cont">
+                        <h3>The Boys</h3>
+                        <p>
+                          Action, 2021, <span>IMDB</span
+                          ><i class="bi bi-star-fill"></i>9.6
+                        </p>
+                      </div>
+                    </a> -->
+                </div>
+            </div>
+        </nav>
+        <div class="content" >
+            @RenderBody()
+        </div>
+
+        @RenderSection("CustomFooter", required: false)
+        @if (ViewContext.RouteData.Values["controller"].ToString() == "Home" &&
+        ViewContext.RouteData.Values["action"].ToString() == "Index")
+        {
+            <section>
+                <h4>Popular</h4>
+                <i class="bi bi-chevron-left"></i>
+                <i class="bi bi-chevron-right"></i>
+                <div class="cards">
+                    @foreach (var movie in Model)
+                    {
+                        <a  href="@Url.Action("WatchMovie", "Home", new { id = movie.MovieID })"
+                           class="card"
+                           data-title="@movie.Title"
+                           data-genre="@movie.Genre?.GenreName"
+                           data-year="@movie.Year"
+                           data-rating="@movie.IMDB_Rating"
+                           data-trailer="@movie.TrailerURL">
+
+                            <img src="@movie.Thumbnail" alt="@movie.Title" class="poster" />
+                            <div class="rest_card">
+                                <img src="@movie.Thumbnail" alt="@movie.Title" />
+                                <div class="cont">
+                                    <h4>@movie.Title</h4>
+                                    <div class="sub">
+                                        <p>@movie.Genre?.GenreName, @movie.Year</p>
+                                        <h3><span>IMDB</span><i class="bi bi-star-fill"></i>@movie.IMDB_Rating</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    }
+            </section>
+        }
+
+
+    </header>
+    <script src="/js/site.js"></script>
+    
+    
+    
+    
+
+   
+</body>
+</html>
