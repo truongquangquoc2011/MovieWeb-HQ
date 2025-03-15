@@ -166,3 +166,4 @@ C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\bin\Debug\net8.0\runt
 C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\bin\Debug\net8.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
 C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\MovieWeb-HQ.csproj.AssemblyReference.cache
 C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\MovieWeb.E34FBECA.Up2Date
+C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\MovieWeb-HQ.sourcelink.json

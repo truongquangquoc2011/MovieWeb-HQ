@@ -1,6 +1,8 @@
 ﻿using Microsoft.AspNetCore.StaticFiles;
 using Microsoft.EntityFrameworkCore;
+using MovieWeb_HQ.Interface;
 using MovieWeb_HQ.Models;
+using MovieWeb_HQ.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,6 +14,10 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(configuration.GetConnectionString("DefaultConnection")));
 
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationDbContext>();
+
+// Đăng ký MovieService với DI Container
+builder.Services.AddScoped<IMovieService, MovieService>();
 
 var app = builder.Build();
 

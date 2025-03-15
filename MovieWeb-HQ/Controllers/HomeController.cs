@@ -1,121 +1,56 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
-using Microsoft.EntityFrameworkCore;
+using MovieWeb_HQ.Interface;
 using MovieWeb_HQ.Models;
+using MovieWeb_HQ.Services;
 
 namespace MovieWeb_HQ.Controllers
 {
     public class HomeController : Controller
     {
-        private readonly ApplicationDbContext _context;
+        private readonly IMovieService _movieService;
 
-        public HomeController(ApplicationDbContext context)
+        public HomeController(IMovieService movieService)
         {
-            _context = context;
+            _movieService = movieService;
         }
 
-        // Hiển thị danh sách phim
         public IActionResult Index()
         {
-            var movies = _context.Movies
-                .Include(m => m.Genre)
-                .Include(m => m.Movie_Countries)
-                .ThenInclude(mc => mc.Country)
-                .ToList();
-
+            var movies = _movieService.GetAllMovies();
             return View(movies);
         }
 
-        // Trang chi tiết phim
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null) return NotFound();
-            var movie = await _context.Movies.FirstOrDefaultAsync(m => m.MovieID == id);
+            var movie = await _movieService.GetMovieByIdAsync(id.Value);
             if (movie == null) return NotFound();
             return View(movie);
         }
 
-        // Phương thức GET để hiển thị form thêm phim
         public IActionResult Create()
         {
-            ViewBag.Genres = new SelectList(_context.Genres, "GenreID", "GenreName");
-            ViewBag.Countries = new SelectList(_context.Countries, "CountryID", "CountryName");
+            ViewBag.Genres = new SelectList(_movieService.GetAllMovies().Select(m => m.Genre).Distinct(), "GenreID", "GenreName");
+            ViewBag.Countries = new SelectList(_movieService.GetAllMovies().SelectMany(m => m.Movie_Countries.Select(mc => mc.Country)).Distinct(), "CountryID", "CountryName");
             return View();
         }
 
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(Movie movie, List<int> SelectedCountries, IFormFile ThumbnailFile)
+        public async Task<IActionResult> Create(Movie movie, List<int> SelectedCountries, IFormFile ThumbnailFile)
         {
-            // Kiểm tra tính hợp lệ của dữ liệu
-
-
-            // Xử lý upload ảnh
-            if (ThumbnailFile != null)
-            {
-                string uploadPath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot/uploads");
-                if (!Directory.Exists(uploadPath))
-                {
-                    Directory.CreateDirectory(uploadPath);
-                }
-
-                string fileName = Guid.NewGuid().ToString() + Path.GetExtension(ThumbnailFile.FileName); // Đặt tên file duy nhất
-                string filePath = Path.Combine(uploadPath, fileName);
-
-                using (var stream = new FileStream(filePath, FileMode.Create))
-                {
-                    ThumbnailFile.CopyTo(stream);
-                }
-
-                movie.Thumbnail = "/uploads/" + fileName;
-            }
-
-            // Thêm phim vào database trước để có MovieID
-            _context.Movies.Add(movie);
-            _context.SaveChanges();
-
-            // Thêm quốc gia cho phim
-            if (SelectedCountries != null && SelectedCountries.Any())
-            {
-                var movieCountries = SelectedCountries.Select(countryId => new Movie_Country
-                {
-                    MovieID = movie.MovieID, // Lúc này MovieID đã có
-                    CountryID = countryId
-                });
-
-                _context.Movie_Countries.AddRange(movieCountries);
-                _context.SaveChanges();
-            }
-
+            await _movieService.AddMovieAsync(movie, SelectedCountries, ThumbnailFile);
             return RedirectToAction("Index");
         }
-        // mở trang xem phim 
-        public IActionResult WatchMovie(int id)
+
+        public async Task<IActionResult> WatchMovie(int id)
         {
-            var movie = _context.Movies
-                .Include(m => m.Genre)
-                .FirstOrDefault(m => m.MovieID == id);
+            var movie = await _movieService.GetMovieDetailsAsync(id);
+            if (movie == null) return NotFound();
 
-            if (movie == null)
-            {
-                return NotFound();
-            }
-
-            // Lấy danh sách phim liên quan theo thể loại (trừ phim đang xem)
-            var relatedMovies = _context.Movies
-                .Where(m => m.GenreID == movie.GenreID && m.MovieID != id)
-                .Take(5)
-                .ToList();
-
-            ViewBag.RelatedMovies = relatedMovies;
-
+            ViewBag.RelatedMovies = _movieService.GetRelatedMovies(id, movie.GenreID);
             return View(movie);
         }
-
-
-
     }
 }
-
-
-
