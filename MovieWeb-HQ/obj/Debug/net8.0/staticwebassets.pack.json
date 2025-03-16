@@ -5,22 +5,6 @@
       "PackagePath": "staticwebassets\\MovieWeb-HQ.bundle.scp.css"
     },
     {
-      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\KongDaoDauLau.ts",
-      "PackagePath": "staticwebassets\\Movie\\KongDaoDauLau.ts"
-    },
-    {
-      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\NaTraMaDong.ts",
-      "PackagePath": "staticwebassets\\Movie\\NaTraMaDong.ts"
-    },
-    {
-      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\TamCamMovie.ts",
-      "PackagePath": "staticwebassets\\Movie\\TamCamMovie.ts"
-    },
-    {
-      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\Movie\\ThorLoveAndThunder.ts",
-      "PackagePath": "staticwebassets\\Movie\\ThorLoveAndThunder.ts"
-    },
-    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

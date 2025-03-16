@@ -33,16 +33,29 @@
             </div>
             <div class="search_user">
                 <input type="text" placeholder="Search..." id="search_input" />
-                <div class="dropdown">
-                    <input type="checkbox" id="dropdown-toggle" />
-                    <label for="dropdown-toggle" class="dropbtn">
-                        <img src="/img/user.jpg" alt="">
-                    </label>
-                    <div class="dropdown-content">
-                        <a href="#">PROFILE</a>
-                        <a href="#">LOGOUT</a>
+                
+
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <!-- Nếu đã đăng nhập, hiển thị Avatar + Dropdown -->
+                    <div class="dropdown">
+                        <input type="checkbox" id="dropdown-toggle" />
+                        <label for="dropdown-toggle" class="dropbtn">
+                            <img src="/img/user.jpg" alt="">
+                        </label>
+                        <div class="dropdown-content">
+                            <a href="#">PROFILE</a>
+                            <a href="@Url.Action("Logout", "Account")">LOGOUT</a>
+                        </div>
                     </div>
-                </div>
+                }
+                else
+                {
+                    <!-- Nếu chưa đăng nhập, hiển thị nút Login -->
+                    <a href="@Url.Action("Login", "Account")" class="login-btn">Login</a>
+                }
+            </div>
+
                 <div class="search">
                     <!-- <a href="#" class="card">
                       <img src="img/the boys.jpg" alt="" />
