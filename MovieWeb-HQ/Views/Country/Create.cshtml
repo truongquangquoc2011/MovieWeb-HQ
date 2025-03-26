@@ -1,0 +1,9 @@
+﻿@model Country
+
+<h2>Thêm Quốc gia</h2>
+
+<form asp-controller="Country" asp-action="Create" method="post">
+    <label for="CountryName">Tên Quốc Gia:</label>
+    <input type="text" name="CountryName" required />
+    <button type="submit" class="btn btn-add">➕ Thêm</button>
+</form>

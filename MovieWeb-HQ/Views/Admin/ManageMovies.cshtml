@@ -1,0 +1,171 @@
+﻿@model List<Movie>
+
+<h2 class="title">🎬 Danh sách phim</h2>
+
+<div class="actions">
+    <a href="@Url.Action("Create", "Home")" class="btn btn-add">➕ Thêm phim</a>
+    <a href="@Url.Action("Index", "Genre")" class="btn btn-manage">📂 Quản lý thể loại</a>
+    <a href="@Url.Action("Index", "Country")" class="btn btn-primary">🌍 Quản lý Quốc gia</a>
+
+    <input type="text" id="searchInput" class="search" placeholder="🔍 Tìm kiếm phim...">
+</div>
+
+<div class="movie-table-container">
+    <table class="movie-table">
+        <thead>
+            <tr>
+                <th>Tên phim</th>
+                <th>Mô tả</th>
+                <th>Năm</th>
+                <th>Thể loại</th>
+                <th>IMDB</th>
+                <th>Quốc gia</th>
+                <th>Hành động</th>
+            </tr>
+        </thead>
+        <tbody id="movieTable">
+            @if (Model != null && Model.Any())
+            {
+                @foreach (var movie in Model)
+                {
+                    <tr>
+                        <td>@movie.Title</td>
+                        <td>@movie.Description</td>
+                        <td>@movie.Year</td>
+                        <td>@movie.Genre?.GenreName</td>
+                        <td class="imdb">@movie.IMDB_Rating ⭐</td>
+                        <td>@(movie.Movie_Countries != null ? string.Join(", ", movie.Movie_Countries.Select(mc => mc.Country?.CountryName ?? "N/A")) : "N/A")</td>
+                        <td>
+                            <a asp-controller="Home" asp-action="Edit" asp-route-id="@movie.MovieID" class="btn btn-edit">✏️ Sửa</a>
+                            <a asp-action="DeleteMovie" asp-route-id="@movie.MovieID" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?')">🗑️ Xóa</a>
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td colspan="7" class="no-movies">Không có phim nào trong danh sách.</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+<style>
+    .content {
+        padding-right: 50px;
+    }
+
+    .title {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+
+    .actions {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+
+    .btn {
+        padding: 10px 15px;
+        border: none;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        border-radius: 5px;
+        transition: 0.3s;
+    }
+
+    .btn-add {
+        background: #28a745;
+    }
+
+        .btn-add:hover {
+            background: #218838;
+        }
+
+    .btn-manage {
+        background: #007bff;
+    }
+
+        .btn-manage:hover {
+            background: #0056b3;
+        }
+
+    .search {
+        padding: 8px;
+        width: 250px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+    }
+
+    .movie-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(0, 0, 0, 0.8);
+    }
+
+        .movie-table th, .movie-table td {
+            padding: 10px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+    .imdb {
+        color: gold;
+    }
+
+    .btn-edit {
+        background: #ffc107;
+        padding: 5px 10px;
+    }
+
+        .btn-edit:hover {
+            background: #e0a800;
+        }
+
+    .btn-delete {
+        background: #dc3545;
+        padding: 5px 10px;
+    }
+
+        .btn-delete:hover {
+            background: #c82333;
+        }
+
+    .no-movies {
+        text-align: center;
+        color: red;
+    }
+
+    .movie-table-container {
+        max-height: 500px;
+        overflow-y: auto;
+        border: 2px solid rgba(255, 255, 255, 0.2);
+        border-radius: 10px;
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+    .movie-table thead {
+        position: sticky;
+        top: 0;
+        background: rgba(0, 0, 0, 0.9);
+        z-index: 100;
+    }
+</style>
+
+<script>
+    document.getElementById("searchInput").addEventListener("keyup", function () {
+        let filter = this.value.toLowerCase();
+        let rows = document.querySelectorAll("#movieTable tr");
+        rows.forEach(row => {
+            let titleCell = row.cells[0];
+            if (titleCell) {
+                let title = titleCell.textContent.toLowerCase();
+                row.style.display = title.includes(filter) ? "" : "none";
+            }
+        });
+    });
+</script>

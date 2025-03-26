@@ -2,19 +2,52 @@
     ViewData["Title"] = "Home Page";
 }
 
+@foreach (var movie in Model)
+{
+    <div class="movie-slide" data-title="@movie.Title" data-genre="@movie.Genre?.GenreName"
+         data-year="@movie.Year" data-rating="@movie.IMDB_Rating" data-thumb="@movie.Thumbnail">
+        <h1 id="title">@movie.Title</h1>
+        <p>A thrilling movie experience</p>
+        <div class="details">
+            <h6>A Netflix Original Film</h6>
+            <h5 id="gen">@movie.Genre?.GenreName</h5>
+            <h4 id="date">@movie.Year</h4>
+            <h3 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i>@movie.IMDB_Rating</h3>
+        </div>
+        <div class="btns">
+            <a href="@Url.Action("WatchMovie", "Home", new { id = movie.MovieID })" id="play">Watch <i class="bi bi-play-fill"></i></a>
+        </div>
+    </div>
+}
 
-<h1 id="title">Money Heist</h1>
-<p>A criminal mastermind who goes by 'The Professor' has</p>
-<div class="details">
-    <h6>A Netflix Original Film</h6>
-    <h5 id="gen">Thriller</h5>
-    <h4 id="date">2021</h4>
-    <h3 id="rate"><span>IMDB</span><i class="bi bi-star-fill"></i>9.6</h3>
-</div>
-<div class="btns">
-    <a href="#" id="play">Watch <i class="bi bi-play-fill"></i></a>
-    <a href="" id="download_main"><i class="bi bi-cloud-arrow-down-fill"></i></a>
-</div>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let movies = document.querySelectorAll(".movie-slide");
+        let root = document.documentElement;
+        let currentIndex = 0;
+
+        function updateSlide() {
+            // Ẩn tất cả phim
+            movies.forEach(movie => movie.classList.remove("active"));
+
+            // Lấy phim hiện tại và cập nhật background
+            let currentMovie = movies[currentIndex];
+            currentMovie.classList.add("active");
+            let thumbnail = currentMovie.getAttribute("data-thumb");
+            root.style.setProperty("--header-bg", `url('${thumbnail}')`);
+
+            // Chuyển sang phim tiếp theo, quay lại đầu nếu hết
+            currentIndex = (currentIndex + 1) % movies.length;
+        }
+
+        // Hiển thị phim đầu tiên khi tải trang
+        updateSlide();
+
+        // Tự động chuyển slide mỗi 5 giây
+        setInterval(updateSlide, 5000);
+    });
+</script>
 
 
 

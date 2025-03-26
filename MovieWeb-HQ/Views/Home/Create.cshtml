@@ -1,0 +1,206 @@
+﻿@model Movie
+
+@{
+    ViewData["Title"] = "Thêm Phim";
+}
+<style>
+    /* Căn chỉnh tổng thể */
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+
+    /* Container chính */
+    .container {
+        max-width: 800px;
+        margin: auto;
+    }
+
+    /* Card trong suốt */
+    .card {
+        border-radius: 12px;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(15px);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        color: white;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        padding: 20px;
+    }
+
+    /* Header */
+    .card-header {
+        text-align: center;
+        font-size: 24px;
+        font-weight: bold;
+        padding: 15px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+    }
+
+    /* Form controls */
+    .form-control,
+    .form-select {
+        width: 100%;
+        padding: 10px;
+        margin-top: 5px;
+        border-radius: 6px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        outline: none;
+    }
+
+        /* Placeholder màu sáng hơn */
+        .form-control::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        /* Hiệu ứng khi focus */
+        .form-control:focus,
+        .form-select:focus {
+            background: rgba(255, 255, 255, 0.3);
+            border-color: white;
+            box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+        }
+
+    /* Bố cục row */
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    /* Cột */
+    .col {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    /* Button */
+    .btn {
+        display: inline-block;
+        padding: 10px 20px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: all 0.3s ease-in-out;
+    }
+
+    /* Nút chính */
+    .btn-success {
+        background-color: #28a745;
+        color: white;
+        border: none;
+    }
+
+        .btn-success:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+
+    /* Nút quay lại */
+    .btn-secondary {
+        background-color: gray;
+        color: white;
+        border: none;
+    }
+
+        .btn-secondary:hover {
+            background-color: #5a5a5a;
+            transform: scale(1.05);
+        }
+
+    /* Text nhỏ */
+    .text-muted {
+        font-size: 12px;
+        opacity: 0.8;
+    }
+
+</style>
+<div class="container mt-4">
+    <div class="card shadow-lg rounded-3">
+        <div class="card-header bg-primary text-white text-center">
+            <h2 class="m-0">Thêm phim mới 🎬</h2>
+        </div>
+        <div class="card-body">
+            <form asp-action="Create" method="post" enctype="multipart/form-data">
+                <div class="row row-cols-1 row-cols-md-2 g-3">
+                    <!-- Cột trái -->
+                    <div class="col">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Tên phim</label>
+                            <input asp-for="Title" class="form-control" placeholder="Nhập tên phim" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Mô tả</label>
+                            <textarea asp-for="Description" class="form-control" rows="3" placeholder="Nhập mô tả"></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Năm phát hành</label>
+                            <input asp-for="Year" type="number" class="form-control" placeholder="VD: 2023" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Thể loại</label>
+                            <select asp-for="GenreID" class="form-select" asp-items="ViewBag.Genres">
+                                <option value="">-- Chọn thể loại --</option>
+                            </select>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">IMDB Rating ⭐</label>
+                            <input asp-for="IMDB_Rating" type="number" step="0.1" class="form-control" placeholder="VD: 8.5" required />
+                        </div>
+                    </div>
+
+                    <!-- Cột phải -->
+                    <div class="col">
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Quốc gia 🌍</label>
+                            <select name="SelectedCountries" class="form-select" multiple>
+                                @foreach (var country in ViewBag.Countries)
+                                {
+                                    <option value="@country.Value">@country.Text</option>
+                                }
+                            </select>
+                            <small class="text-muted">Nhấn giữ Ctrl để chọn nhiều quốc gia</small>
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Hình ảnh 🖼️</label>
+                            <input type="file" name="ThumbnailFile" class="form-control" accept="image/*" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">URL Video 🎥</label>
+                            <input asp-for="VideoURL" class="form-control" placeholder="Nhập link video" required />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">URL Trailer 📽️</label>
+                            <input asp-for="TrailerURL" class="form-control" placeholder="Nhập link trailer" required />
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nút submit -->
+                <div class="text-center mt-4">
+                    <button type="submit" class="btn btn-success px-4 py-2">
+                        <i class="bi bi-plus-circle"></i> Thêm phim
+                    </button>
+                    <a asp-action="Index" class="btn btn-secondary ms-2 px-4 py-2">
+                        <i class="bi bi-arrow-left"></i> Quay lại
+                    </a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+

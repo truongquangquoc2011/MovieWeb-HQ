@@ -1,0 +1,10 @@
+﻿@model Country
+
+<h2>Xóa Quốc gia</h2>
+<p>Bạn có chắc chắn muốn xóa quốc gia: <strong>@Model.CountryName</strong>?</p>
+
+<form asp-controller="Country" asp-action="Delete" method="post">
+    <input type="hidden" asp-for="CountryID" />
+    <button type="submit" class="btn btn-danger">🗑️ Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Quay lại</a>
+</form>
