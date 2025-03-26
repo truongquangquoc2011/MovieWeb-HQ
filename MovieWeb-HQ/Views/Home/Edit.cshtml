@@ -1,0 +1,191 @@
+﻿@model MovieWeb_HQ.Models.Movie
+<link rel="stylesheet" href="~/css/movie-edit.css" asp-append-version="true" />
+
+@{
+    ViewData["Title"] = "Chỉnh sửa phim";
+
+}
+
+<div class="background">
+    <div class="form-container">
+        <h2>Chỉnh sửa phim 🎬</h2>
+
+        <form asp-action="Edit" enctype="multipart/form-data">
+            <input type="hidden" asp-for="MovieID" />
+
+            <div class="form-grid">
+                <!-- Cột trái -->
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="Title">Tên phim:</label>
+                        <input asp-for="Title" class="input-field" placeholder="Nhập tên phim..." />
+                        <span asp-validation-for="Title" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="Year">Năm phát hành:</label>
+                        <input asp-for="Year" class="input-field" type="number" placeholder="VD: 2023" />
+                        <span asp-validation-for="Year" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label asp-for="IMDB_Rating">IMDB Rating ⭐</label>
+                        <input asp-for="IMDB_Rating" class="input-field" type="number" step="0.1" placeholder="VD: 8.5" />
+                        <span asp-validation-for="IMDB_Rating" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Hình ảnh 🖼️</label>
+                        <input type="file" name="ThumbnailFile" class="input-field" />
+                        @if (!string.IsNullOrEmpty(Model.Thumbnail))
+                        {
+                            <img src="@Model.Thumbnail" alt="Thumbnail" class="thumbnail-preview" />
+                        }
+                    </div>
+                </div>
+
+                <!-- Cột phải -->
+                <div class="form-column">
+                    <div class="form-group">
+                        <label asp-for="GenreID">Thể loại:</label>
+                        <select asp-for="GenreID" class="input-field">
+                            <option value="">-- Chọn thể loại --</option>
+                            @foreach (var genre in ViewBag.Genres)
+                            {
+                                <option value="@genre.Value">@genre.Text</option>
+                            }
+                        </select>
+                        <span asp-validation-for="GenreID" class="error-message"></span>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Quốc gia 🌍</label>
+                        <select name="SelectedCountries" class="input-field" multiple>
+                            @foreach (var country in ViewBag.Countries)
+                            {
+                                <option value="@country.Value">@country.Text</option>
+                            }
+                        </select>
+                        <small class="text-muted">Nhấn giữ Ctrl để chọn nhiều quốc gia</small>
+                    </div>
+                </div>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="btn-primary">💾 Lưu</button>
+                <a asp-action="Index" class="btn-secondary">❌ Hủy</a>
+            </div>
+        </form>
+    </div>
+</div>
+
+<style>
+    /* Background */
+    .background {
+        
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    /* Form container (Glassmorphism) */
+    .form-container {
+        width: 700px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        color: white;
+        text-align: center;
+    }
+
+    /* Bố cục 2 cột */
+    .form-grid {
+        display: flex;
+        gap: 20px;
+        justify-content: space-between;
+    }
+
+    .form-column {
+        width: 50%;
+    }
+
+    /* Input và select */
+    .input-field {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        border-radius: 6px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+        font-size: 16px;
+        outline: none;
+    }
+
+        .input-field::placeholder {
+            color: rgba(255, 255, 255, 0.6);
+        }
+
+        .input-field:focus {
+            border-color: white;
+        }
+
+    /* Thumbnail Preview */
+    .thumbnail-preview {
+        display: block;
+        max-width: 100%;
+        max-height: 150px; /* Giới hạn chiều cao */
+        object-fit: contain; /* Đảm bảo ảnh không bị méo */
+        border-radius: 10px;
+        margin-top: 10px;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    }
+
+
+    /* Nút bấm */
+    .button-group {
+        margin-top: 15px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .btn-primary, .btn-secondary {
+        padding: 10px 15px;
+        font-size: 16px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: 0.3s;
+        text-decoration: none;
+        width: 48%;
+        text-align: center;
+    }
+
+    .btn-primary {
+        background: #28a745;
+        color: white;
+    }
+
+        .btn-primary:hover {
+            background: #218838;
+        }
+
+    .btn-secondary {
+        background: #dc3545;
+        color: white;
+    }
+
+        .btn-secondary:hover {
+            background: #b02130;
+        }
+
+    /* Lỗi validation */
+    .error-message {
+        color: red;
+        font-size: 14px;
+    }
+
+
+</style>

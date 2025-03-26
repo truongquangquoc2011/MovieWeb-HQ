@@ -1,0 +1,9 @@
+﻿@model Genre
+
+<h2>Thêm thể loại</h2>
+<form asp-controller="Genre" asp-action="Create" method="post">
+    <label for="GenreName">Tên thể loại:</label>
+    <input asp-for="GenreName" class="form-control" required />
+    <button type="submit" class="btn btn-add">➕ Thêm</button>
+</form>
+

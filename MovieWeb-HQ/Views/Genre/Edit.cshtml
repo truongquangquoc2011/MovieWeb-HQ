@@ -1,0 +1,10 @@
+﻿@model Genre
+
+<h2>Chỉnh sửa thể loại</h2>
+<form asp-controller="Genre" asp-action="Edit" method="post">
+    <input type="hidden" name="GenreID" value="@Model.GenreID" />
+    <label for="GenreName">Tên thể loại:</label>
+    <input type="text" name="GenreName" value="@Model.GenreName" required />
+    <button type="submit" class="btn btn-edit">💾 Lưu</button>
+</form>
+

@@ -1,0 +1,60 @@
+﻿body.dark-mode {
+    background: #121212;
+    color: #e0e0e0;
+}
+
+    body.dark-mode header,
+    body.dark-mode nav {
+        background: #1e1e1e;
+        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    }
+
+        body.dark-mode .cinema_name,
+        body.dark-mode nav ul li a {
+            color: #ffffff;
+        }
+
+    body.dark-mode .search_user input {
+        background: #333;
+        color: #fff;
+        border: 1px solid #555;
+    }
+
+    body.dark-mode .dropdown-content {
+        background: #222;
+    }
+
+        body.dark-mode .dropdown-content a {
+            color: #ddd;
+        }
+
+    body.dark-mode .toggle-label {
+        background: #444;
+    }
+
+        body.dark-mode .toggle-label::after {
+            background: #fff;
+        }
+
+    body.dark-mode .cards .card {
+        background: #222;
+        box-shadow: 0 2px 10px rgba(255, 255, 255, 0.1);
+    }
+
+        body.dark-mode .cards .card .sub p {
+            color: #ccc;
+        }
+
+        body.dark-mode .cards .card h3 {
+            color: #f5c518; /* Giữ màu vàng IMDB */
+        }
+
+    body.dark-mode .login-btn {
+        background: #444;
+        color: white;
+        border: 1px solid #666;
+    }
+
+        body.dark-mode .login-btn:hover {
+            background: #555;
+        }

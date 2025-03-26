@@ -1,0 +1,48 @@
+﻿@media (max-width: 768px) {
+    /* Canh giữa form */
+    .background {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        overflow: hidden;
+    }
+
+    /* Cho phép cuộn trong box */
+    .form-container {
+        width: 95%;
+        max-height: 90vh; /* Giới hạn chiều cao để không chiếm hết màn hình */
+        padding: 15px;
+        overflow: hidden;
+    }
+
+    /* Chỉnh input field */
+    .input-field {
+        width: 100%;
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    /* Quốc gia chọn nhiều */
+    select[name="SelectedCountries"] {
+        height: auto;
+        min-height: 40px;
+    }
+
+    /* Ảnh preview nhỏ lại */
+    .thumbnail-preview {
+        max-width: 100%;
+        height: auto;
+    }
+
+    /* Nút bấm căn chỉnh */
+    .button-group {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+    }
+}

@@ -1,0 +1,10 @@
+﻿@model Country
+
+<h2>Chỉnh sửa Quốc gia</h2>
+
+<form asp-controller="Country" asp-action="Edit" method="post">
+    <input type="hidden" asp-for="CountryID" />
+    <label for="CountryName">Tên Quốc Gia:</label>
+    <input type="text" asp-for="CountryName" required />
+    <button type="submit" class="btn btn-save">💾 Lưu</button>
+</form>

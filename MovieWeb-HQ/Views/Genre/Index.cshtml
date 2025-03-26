@@ -1,0 +1,36 @@
+﻿@model IEnumerable<Genre>
+
+<h2>Quản lý Thể loại</h2>
+<a asp-action="Create" class="btn btn-primary">Thêm mới</a>
+<table class="table">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Tên thể loại</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var genre in Model)
+        {
+            <tr>
+                <td>@genre.GenreID</td>
+                <td>@genre.GenreName</td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@genre.GenreID">Sửa</a> |
+                    <a asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.GenreID" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?')">🗑️ Xóa</a>
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+

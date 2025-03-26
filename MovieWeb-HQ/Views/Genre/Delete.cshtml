@@ -1,0 +1,9 @@
+﻿@model Genre
+
+<h2>Xóa thể loại</h2>
+<p>Bạn có chắc muốn xóa thể loại "@Model.GenreName"?</p>
+<form asp-action="Delete" method="post">
+    <input type="hidden" asp-for="GenreID" />
+    <button type="submit" class="btn btn-danger">Xóa</button>
+    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
+</form>
