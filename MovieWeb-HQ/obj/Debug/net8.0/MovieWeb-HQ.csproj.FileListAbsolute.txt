@@ -175,3 +175,5 @@ C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\refi
 C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\MovieWeb-HQ.pdb
 C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\MovieWeb-HQ.genruntimeconfig.cache
 C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\obj\Debug\net8.0\ref\MovieWeb-HQ.dll
+C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\bin\Debug\net8.0\Newtonsoft.Json.dll
+C:\Users\hisis\OneDrive\Máy tính\MovieWeb-HQ\MovieWeb-HQ\bin\Debug\net8.0\RestSharp.dll

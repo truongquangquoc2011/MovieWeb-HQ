@@ -3,12 +3,100 @@
   "WorkspaceRootPath": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\models\\momo\\momocreatepaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\models\\momo\\momocreatepaymentresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\models\\momo\\momoexecuteresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\models\\momo\\momoexecuteresponsemodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\models\\momo\\momooptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\models\\momo\\momooptionmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\controllers\\paymentcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\models\\moviedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\models\\moviedbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\interface\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\interface\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\services\\momoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\services\\momoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\interface\\imomoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\interface\\imomoservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\payment\\paymentsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\payment\\paymentsuccess.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\payment\\paymentfail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\payment\\paymentfail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\payment\\paymentcallback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\payment\\paymentcallback.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\controllers\\countrycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\payment\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\models\\order\\orderinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\models\\order\\orderinfomodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\home\\watchmovie.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,18 +105,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\home\\edit.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -71,20 +147,8 @@
       "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\wwwroot\\css\\search1.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\services\\movieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\interface\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\interface\\imovieservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\views\\account\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|c:\\users\\hisis\\onedrive\\m\u00E1y t\u00EDnh\\movieweb-hq\\movieweb-hq\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A645CD9C-8603-4325-9BB6-B0F1D26B263C}|MovieWeb-HQ\\MovieWeb-HQ.csproj|solutionrelative:movieweb-hq\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,11 +158,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 288,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 13,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\css\\site.css",
@@ -107,7 +171,8 @@
               "ViewState": "AQIAAL8BAAAAAAAAAAAAwNYBAAAgAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-03-21T17:48:06.581Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -127,224 +192,279 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
+              "Title": "PaymentController.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\PaymentController.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Controllers\\PaymentController.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\PaymentController.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Controllers\\PaymentController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEgAAAAtAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T07:45:17.931Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MomoExecuteResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Momo\\MomoExecuteResponseModel.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Models\\Momo\\MomoExecuteResponseModel.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Momo\\MomoExecuteResponseModel.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Models\\Momo\\MomoExecuteResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T07:24:02.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "MovieService.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Services\\MovieService.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Services\\MovieService.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Services\\MovieService.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Services\\MovieService.cs",
+              "ViewState": "AQIAAA0AAAAAAAAAAAAgwBkAAAAJAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-24T04:21:08.995Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Home\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAABCAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:20:26.63Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Program.cs",
               "RelativeDocumentMoniker": "MovieWeb-HQ\\Program.cs",
               "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Program.cs",
               "RelativeToolTip": "MovieWeb-HQ\\Program.cs",
-              "ViewState": "AQIAACQAAAAAAAAAAAAcwDYAAAAFAAAA",
+              "ViewState": "AQIAACwAAAAAAAAAAAAAAEUAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-26T11:04:49.349Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "WatchMovie.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:43:48.82Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Edit.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
-              "ViewState": "AQIAAHgAAAAAAAAAAAAQwJAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T11:38:28.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Error.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:31.933Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "_ValidationScriptsPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:30.709Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ManageMovies.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
-              "ViewState": "AQIAACQAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:04.932Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:03.494Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:00.26Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "movie-edit.css",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
-              "RelativeToolTip": "MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAVAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-26T10:54:04.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-24T15:04:38.158Z"
+              "DocumentIndex": 4,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\appsettings.json",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\appsettings.json",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\appsettings.json",
+              "RelativeToolTip": "MovieWeb-HQ\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABIAAAAqAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-27T07:19:32.411Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "HomeController.cs",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\HomeController.cs",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Controllers\\HomeController.cs",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\HomeController.cs",
-              "RelativeToolTip": "MovieWeb-HQ\\Controllers\\HomeController.cs",
-              "ViewState": "AQIAABUAAAAAAAAAAAAowCcAAAAaAAAA",
+              "Title": "MomoCreatePaymentResponseModel.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Momo\\MomoCreatePaymentResponseModel.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Models\\Momo\\MomoCreatePaymentResponseModel.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Momo\\MomoCreatePaymentResponseModel.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Models\\Momo\\MomoCreatePaymentResponseModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAAA0AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:29:17.855Z"
+              "WhenOpened": "2025-03-27T07:23:18.718Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "_ViewImports.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewImports.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\_ViewImports.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewImports.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\_ViewImports.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:36.445Z"
+              "DocumentIndex": 3,
+              "Title": "MomoOptionModel.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Momo\\MomoOptionModel.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Models\\Momo\\MomoOptionModel.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Momo\\MomoOptionModel.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Models\\Momo\\MomoOptionModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAvAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T07:24:44.609Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Search1.css",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\Search1.css",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\css\\Search1.css",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\Search1.css",
-              "RelativeToolTip": "MovieWeb-HQ\\wwwroot\\css\\Search1.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAEAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-03-24T04:48:39.429Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "MovieWeb-HQ\\Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AQIAAFoAAAAAAAAAAAAAABgAAAAMAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAA0AAAAaAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-21T17:38:57.539Z"
+              "WhenOpened": "2025-03-21T17:38:57.539Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\Home\\Index.cshtml",
-              "ViewState": "AQIAABMAAAAAAAAAAAAgwCUAAAAvAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:20:26.63Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "MovieWeb-HQ\\Views\\_ViewStart.cshtml",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-26T10:55:37.613Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 11,
               "Title": "IMovieService.cs",
               "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Interface\\IMovieService.cs",
               "RelativeDocumentMoniker": "MovieWeb-HQ\\Interface\\IMovieService.cs",
               "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Interface\\IMovieService.cs",
               "RelativeToolTip": "MovieWeb-HQ\\Interface\\IMovieService.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAkAAAAjAAAA",
+              "ViewState": "AQIAAAMAAAAAAAAAAAD4vwsAAAApAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-03-24T04:20:53.57Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MovieService.cs",
-              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Services\\MovieService.cs",
-              "RelativeDocumentMoniker": "MovieWeb-HQ\\Services\\MovieService.cs",
-              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Services\\MovieService.cs",
-              "RelativeToolTip": "MovieWeb-HQ\\Services\\MovieService.cs",
-              "ViewState": "AQIAAEEAAAAAAAAAAAAmwFMAAAAJAAAA",
+              "DocumentIndex": 9,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Controllers\\HomeController.cs",
+              "ViewState": "AQIAACkAAAAAAAAAAAAIwDkAAAAJAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-24T04:21:08.995Z"
+              "WhenOpened": "2025-03-24T04:29:17.855Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "MomoService.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Services\\MomoService.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Services\\MomoService.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Services\\MomoService.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Services\\MomoService.cs",
+              "ViewState": "AQIAADYAAAAAAAAAAAAqwE8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T07:27:58.232Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "IMomoService.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Interface\\IMomoService.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Interface\\IMomoService.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Interface\\IMomoService.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Interface\\IMomoService.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAsAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T07:26:37.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MovieDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\MovieDbContext.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Models\\MovieDbContext.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\MovieDbContext.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Models\\MovieDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACEAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T15:57:39.269Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "OrderInfoModel.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Order\\OrderInfoModel.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Models\\Order\\OrderInfoModel.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Models\\Order\\OrderInfoModel.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Models\\Order\\OrderInfoModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T07:25:46.969Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "PaymentCallBack.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\PaymentCallBack.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Payment\\PaymentCallBack.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\PaymentCallBack.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Payment\\PaymentCallBack.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAHAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T07:49:09.393Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 20,
+              "Title": "CountryController.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\CountryController.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Controllers\\CountryController.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\CountryController.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Controllers\\CountryController.cs",
+              "ViewState": "AQIAAAYAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T09:19:19.182Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "PaymentSuccess.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\PaymentSuccess.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Payment\\PaymentSuccess.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\PaymentSuccess.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Payment\\PaymentSuccess.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T10:08:28.672Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "PaymentFail.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\PaymentFail.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Payment\\PaymentFail.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\PaymentFail.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Payment\\PaymentFail.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T10:08:52.372Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "AdminController.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\AdminController.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Controllers\\AdminController.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\AdminController.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Controllers\\AdminController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T09:19:24.822Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Controllers\\AccountController.cs",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "MovieWeb-HQ\\Controllers\\AccountController.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAwAsAAABDAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-27T09:19:35.626Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\Index.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Payment\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Payment\\Index.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Payment\\Index.cshtml",
+              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAUAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-27T07:47:04.661Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\js\\site.js",
@@ -356,7 +476,151 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 24,
+              "Title": "WatchMovie.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Home\\WatchMovie.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:43:48.82Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Edit.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Home\\Edit.cshtml",
+              "ViewState": "AQIAAHgAAAAAAAAAAAAQwJAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T11:38:28.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Shared\\Error.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:31.933Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:30.709Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ManageMovies.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Admin\\ManageMovies.cshtml",
+              "ViewState": "AQIAACEAAAAAAAAAAIBJwAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:04.932Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Admin\\Index.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:03.494Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Genre\\Create.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:00.26Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "movie-edit.css",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
+              "RelativeToolTip": "MovieWeb-HQ\\wwwroot\\css\\movie-edit.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACIAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-26T10:54:04.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\Account\\Profile.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAuAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-24T15:04:38.158Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\_ViewImports.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:36.445Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "Search1.css",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\Search1.css",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\css\\Search1.css",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\Search1.css",
+              "RelativeToolTip": "MovieWeb-HQ\\wwwroot\\css\\Search1.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAGIAAAAEAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-03-24T04:48:39.429Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "MovieWeb-HQ\\Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "MovieWeb-HQ\\Views\\_ViewStart.cshtml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-26T10:55:37.613Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
               "Title": "dark-mode.css",
               "DocumentMoniker": "C:\\Users\\hisis\\OneDrive\\M\u00E1y t\u00EDnh\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\dark-mode.css",
               "RelativeDocumentMoniker": "MovieWeb-HQ\\wwwroot\\css\\dark-mode.css",

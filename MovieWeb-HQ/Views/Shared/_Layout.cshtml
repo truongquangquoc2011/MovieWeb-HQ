@@ -38,7 +38,10 @@
             
 
             <div class="search_user">
-                
+                @if (User.IsInRole("User"))
+                {
+                    <a href="@Url.Action("Index", "Payment")" class="membership-btn">Đăng ký hội viên</a>
+                }
                 
 
                 @if (User.Identity.IsAuthenticated)

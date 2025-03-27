@@ -13,6 +13,7 @@ namespace MovieWeb_HQ.Models
         public DbSet<Movie_Country> Movie_Countries { get; set; }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder); // Gọi base để cấu hình Identity
@@ -30,5 +31,6 @@ namespace MovieWeb_HQ.Models
                 .HasForeignKey(mc => mc.CountryID);
         }
     }
+    
 
 }
