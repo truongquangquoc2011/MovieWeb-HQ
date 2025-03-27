@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using MovieWeb_HQ.Interface;
 using MovieWeb_HQ.Models;
+using MovieWeb_HQ.Models.Momo;
 using MovieWeb_HQ.Services;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -16,7 +17,8 @@ builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
 builder.Services.AddScoped<IMovieService, MovieService>();
 builder.Services.AddScoped<IGenreService, GenreService>();
 builder.Services.AddScoped<ICountryService, CountryService>();
-
+builder.Services.Configure<MomoOptionModel>(builder.Configuration.GetSection("MomoAPI"));
+builder.Services.AddScoped<IMomoService, MomoService>();
 builder.Services.AddControllersWithViews();
 
 var app = builder.Build();
