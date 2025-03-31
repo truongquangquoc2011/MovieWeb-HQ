@@ -31,56 +31,31 @@ namespace MovieWeb_HQ.Controllers
         }
 
         [HttpGet]
-        [HttpPost]
         public async Task<IActionResult> PaymentCallBack()
         {
+            // Xử lý phản hồi từ MoMo
             var response = _momoService.PaymentExecuteAsync(HttpContext.Request.Query);
 
-            if (response == null)
-            {
-                TempData["PaymentMessage"] = "Lỗi: Không nhận được phản hồi từ MoMo!";
-                return RedirectToAction("PaymentFail");
-            }
+            // Lấy UserId từ Identity
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
-            Console.WriteLine($"MoMo Response: {JsonConvert.SerializeObject(response)}");
-
-            if (response.Status == "0") // "0" = Thành công
+            if (!string.IsNullOrEmpty(userId))
             {
-                var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-                if (userId != null)
+                var user = await _userManager.FindByIdAsync(userId);
+
+                if (user != null)
                 {
-                    var user = await _userManager.FindByIdAsync(userId);
-                    if (user != null)
-                    {
-                        var isUser = await _userManager.IsInRoleAsync(user, "User");
-                        if (isUser)
-                        {
-                            await _userManager.RemoveFromRoleAsync(user, "User");
-                            await _userManager.AddToRoleAsync(user, "Member");
-                        }
-                    }
+                    // Xóa role "User" (nếu có) và thêm "Member"
+                    await _userManager.RemoveFromRoleAsync(user, "User");
+                    await _userManager.AddToRoleAsync(user, "Member");
                 }
+            }
 
-                TempData["PaymentMessage"] = "Thanh toán thành công! Cảm ơn bạn đã đăng ký hội viên.";
-                return RedirectToAction("PaymentSuccess");
-            }
-            else
-            {
-                TempData["PaymentMessage"] = "Thanh toán không thành công. Vui lòng thử lại!";
-                return RedirectToAction("PaymentFail");
-            }
-        }
-        public IActionResult PaymentSuccess()
-        {
-            ViewBag.Message = TempData["PaymentMessage"];
-            return View();
+            // Chuyển hướng đến trang hiển thị kết quả
+            TempData["PaymentMessage"] = "✅ Thanh toán thành công! Bạn đã được nâng cấp lên thành viên.";
+            return View(response);
         }
 
-        public IActionResult PaymentFail()
-        {
-            ViewBag.Message = TempData["PaymentMessage"];
-            return View();
-        }
 
     }
 }

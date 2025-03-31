@@ -1,5 +1,7 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
+    var isAllowed = User.IsInRole("Admin") || User.IsInRole("Member");
+}
 }
 
 <style>
@@ -7,19 +9,16 @@
         background: url('/uploads/money heist1.jpg') center/cover no-repeat !important;
     }
 
-    
-
     .fancybox-content {
         border-radius: 15px !important;
         box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3) !important;
         background: transparent !important;
     }
 
-    /* Tùy chỉnh nút đóng Fancybox */
     .fancybox-button--close {
         width: 40px !important;
         height: 40px !important;
-        background: rgba(255, 255, 255, 0.2) !important; /* Màu nền trong suốt */
+        background: rgba(255, 255, 255, 0.2) !important;
         border-radius: 50% !important;
         display: flex !important;
         align-items: center !important;
@@ -31,29 +30,52 @@
         right: 15px !important;
     }
 
-        /* Thay đổi biểu tượng nút đóng */
-        .fancybox-button--close svg {
-            display: none; /* Ẩn biểu tượng mặc định */
-        }
-
         .fancybox-button--close::before {
-            content: "\2715"; /* Unicode cho dấu X */
+            content: "\2715";
             font-size: 22px;
             font-weight: bold;
         }
 
-        /* Hiệu ứng khi di chuột vào */
         .fancybox-button--close:hover {
-            background: rgba(255, 0, 0, 0.7); /* Đổi màu nền thành đỏ */
+            background: rgba(255, 0, 0, 0.7);
             transform: scale(1.1);
         }
 
+    #membershipOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none;
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
 
+    .overlay-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+    }
 
-
-
+        .overlay-content h2 {
+            color: red;
+        }
 </style>
 
+<!-- Overlay thông báo -->
+<div id="membershipOverlay">
+    <div class="overlay-content">
+        <h2>Nội dung này dành cho hội viên!</h2>
+        <p>Vui lòng đăng ký thành viên để có trải nghiệm tốt nhất.</p>
+        <a href="@Url.Action("Index", "Payment")" class="btn btn-primary">Đăng ký ngay</a>
+        <button id="closeOverlay" class="btn btn-secondary">Đóng</button>
+    </div>
+</div>
 
 <!-- 🔹 THÔNG TIN PHIM -->
 @section CustomHeader {
@@ -134,7 +156,14 @@
 <script>
     $(document).ready(function () {
         $("#play").click(function (e) {
-            e.preventDefault(); // Ngăn load trang
+            e.preventDefault();
+
+            let isAllowed = @isAllowed.ToString().ToLower();
+
+            if (!isAllowed) {
+                $("#membershipOverlay").fadeIn();
+                return;
+            }
 
             let videoURL = "@Model.VideoURL";
             if (!videoURL) {
@@ -144,8 +173,8 @@
 
             $.fancybox.open({
                 src: `<video controls autoplay>
-                        <source src="${videoURL}" type="video/mp4">
-                      </video>`,
+                            <source src="${videoURL}" type="video/mp4">
+                          </video>`,
                 type: 'html',
                 opts: {
                     afterShow: function (instance, current) {
@@ -154,7 +183,9 @@
                 }
             });
         });
+
+        $("#closeOverlay").click(function () {
+            $("#membershipOverlay").fadeOut();
+        });
     });
-
-
 </script>
