@@ -1,0 +1,153 @@
+﻿@model List<Movie>
+
+<h2 style="color: white; padding-left: 20px;">All Movies</h2>
+
+<!-- Form Lọc -->
+<div style="padding: 20px; display: flex; gap: 20px; align-items: center;">
+    <form method="get" action="@Url.Action("Movies", "Home")" class="filter-form">
+        <select name="genreId" class="filter-select">
+            <option value="">-- Thể loại --</option>
+            @foreach (var genre in ViewBag.Genres as List<Genre>)
+            {
+                <option value="@genre.GenreID">@genre.GenreName</option>
+            }
+        </select>
+
+        <select name="countryId" class="filter-select">
+            <option value="">-- Quốc gia --</option>
+            @foreach (var country in ViewBag.Countries as List<Country>)
+            {
+                <option value="@country.CountryID">@country.CountryName</option>
+            }
+        </select>
+
+        <button type="submit" class="filter-button">Lọc</button>
+    </form>
+</div>
+@if (!Model.Any())
+{
+    <p style="color: white; padding-left: 20px;">No movies available.</p>
+}
+else
+{
+    <div class="movie-list">
+        @foreach (var movie in Model)
+        {
+            <div class="movie-item">
+                <a href="@Url.Action("WatchMovie", "Home", new { id = movie.MovieID })">
+                    <div class="movie-thumb">
+                        <img src="@movie.Thumbnail" alt="@movie.Title">
+                    </div>
+                    <p class="movie-title">@movie.Title</p>
+                </a>
+            </div>
+        }
+    </div>
+}
+
+<style>
+    .filter-form {
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
+
+    .filter-select {
+        padding: 10px;
+        border-radius: 8px;
+        border: 1px solid #444;
+        background-color: #1c1c1c;
+        color: white;
+        transition: border-color 0.3s, background-color 0.3s;
+    }
+
+        .filter-select:focus {
+            outline: none;
+            border-color: #ff9800;
+        }
+
+    .filter-button {
+        padding: 10px 20px;
+        background-color: #ff9800;
+        color: white;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+
+        .filter-button:hover {
+            background-color: #e68900;
+            transform: scale(1.05);
+        }
+
+        header::before {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url('/uploads/money heist1.jpg');
+            opacity: 0.6;
+            z-index: -1;
+            background-position: center;
+            background-size: cover;
+            transition: background 0.5s ease-in-out;
+        }
+
+
+        header::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(180deg, transparent, #000);
+            z-index: -1;
+        }
+
+    .movie-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 20px;
+        padding: 20px;
+        max-height: 70vh; /* Giới hạn chiều cao tối đa của phần hiển thị phim */
+        overflow-y: auto; /* Kích hoạt cuộn dọc nếu nội dung vượt quá chiều cao */
+    }
+
+        .movie-list::-webkit-scrollbar {
+            display: none; /* Ẩn thanh cuộn trên Chrome, Edge và Safari */
+        }
+
+    .movie-item {
+        background: #1c1c1c;
+        border-radius: 12px;
+        overflow: hidden;
+        transition: transform 0.3s;
+    }
+
+        .movie-item:hover {
+            transform: scale(1.05);
+        }
+
+    .movie-thumb {
+        position: relative;
+    }
+
+        .movie-thumb img {
+            width: 100%;
+            height: 270px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+
+    .movie-title {
+        padding: 10px;
+        font-size: 15px;
+        color: white;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        width: auto !important;
+    }
+</style>

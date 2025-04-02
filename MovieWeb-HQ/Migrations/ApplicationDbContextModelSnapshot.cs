@@ -326,6 +326,31 @@ namespace MovieWeb_HQ.Migrations
                     b.ToTable("Movie_Countries");
                 });
 
+            modelBuilder.Entity("MovieWeb_HQ.Models.WatchHS", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("MovieID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("WatchedAt")
+                        .HasColumnType("datetime2");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("MovieID");
+
+                    b.ToTable("WatchHSs");
+                });
+
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRoleClaim<string>", b =>
                 {
                     b.HasOne("Microsoft.AspNetCore.Identity.IdentityRole", null)
@@ -403,6 +428,17 @@ namespace MovieWeb_HQ.Migrations
                         .IsRequired();
 
                     b.Navigation("Country");
+
+                    b.Navigation("Movie");
+                });
+
+            modelBuilder.Entity("MovieWeb_HQ.Models.WatchHS", b =>
+                {
+                    b.HasOne("MovieWeb_HQ.Models.Movie", "Movie")
+                        .WithMany()
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Movie");
                 });

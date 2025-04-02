@@ -1,0 +1,72 @@
+﻿@{
+    ViewData["Title"] = "Watch Movie";
+}
+<div class="Xemphim">
+<!-- Lấy dữ liệu từ model -->
+<h1>@Model.Title</h1>
+
+<!-- Khung chứa video -->
+<div class="phimhay">
+<div class="video-containers">
+            <video controls playsinline>
+        <source src="@Model.VideoURL" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+</div>
+</div>
+</div>
+<style>
+    .Xemphim {
+        height: 80vh; /* Chiều cao toàn màn hình */
+        overflow-y: auto; /* Cho phép cuộn dọc nếu nội dung quá lớn */
+        padding: 20px;
+        text-align: center;
+        box-sizing: border-box;
+
+    }
+
+    .phimhay {
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .video-containers {
+        width: 90%; /* Giới hạn chiều rộng video */
+        max-width: 1200px; /* Tăng kích thước tối đa */
+        position: relative;
+    }
+
+    video {
+        width: 100%; /* Video chiếm toàn bộ chiều rộng container */
+        height: 70vh; /* Tăng chiều cao video */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    header::before {
+        content: "";
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        background: url('/uploads/money heist1.jpg') !important;
+        z-index: -1;
+        background-position: center;
+        background-size: cover;
+        transition: background 0.5s ease-in-out;
+    }
+
+    /* Fix video trong header */
+    header video {
+        position: static !important;
+        width: 100% !important; /* Cho video rộng toàn bộ container */
+        height: 80vh !important; /* Cho video cao tới 80% chiều cao màn hình */
+        max-height: none; /* Bỏ giới hạn chiều cao */
+        object-fit: cover !important; /* Video sẽ bao phủ toàn bộ khung */
+        border-radius: 10px;
+    }
+
+</style>

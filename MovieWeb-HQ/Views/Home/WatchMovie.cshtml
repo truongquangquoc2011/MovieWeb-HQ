@@ -2,7 +2,7 @@
     ViewData["Title"] = "Home Page";
     var isAllowed = User.IsInRole("Admin") || User.IsInRole("Member");
 }
-}
+
 
 <style>
     .fancybox-bg {
@@ -101,9 +101,10 @@
 </div>
 <!-- Nút Xem Phim -->
 <div class="btns">
-    <a href="#" id="play">Watch <i class="bi bi-play-fill"></i></a>
+    <a href="@Url.Action("MoviePlayer", "Home", new { id = Model.MovieID })" id="play">Watch <i class="bi bi-play-fill"></i></a>
     <a href="" id="download_main"><i class="bi bi-cloud-arrow-down-fill"></i></a>
 </div>
+
 
 @section CustomFooter {
     <section>
@@ -153,6 +154,7 @@
 <!-- JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
+<!--
 <script>
     $(document).ready(function () {
         $("#play").click(function (e) {
@@ -188,4 +190,14 @@
             $("#membershipOverlay").fadeOut();
         });
     });
+</script> -->
+<script>
+    $(document).ready(function () {
+        let movieId = @Model.MovieID;
+
+        // Gửi request để lưu lịch sử xem
+        $.post("/WatchHistory/SaveWatchHistory", { movieId: movieId })
+            .fail(() => console.warn("Lỗi khi lưu lịch sử xem"));
+    });
 </script>
+

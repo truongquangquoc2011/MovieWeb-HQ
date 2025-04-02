@@ -12,6 +12,7 @@ namespace MovieWeb_HQ.Models
         public DbSet<Country> Countries { get; set; }
         public DbSet<Movie_Country> Movie_Countries { get; set; }
         public DbSet<ApplicationUser> ApplicationUser { get; set; }
+        public DbSet<WatchHS> WatchHSs { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

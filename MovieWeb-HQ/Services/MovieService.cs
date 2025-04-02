@@ -152,8 +152,24 @@ namespace MovieWeb_HQ.Services
             return true;
         }
 
+        public List<Movie> FilterMovies(int? genreId, int? countryId)
+        {
+            var query = _context.Movies
+                         .Include(m => m.Genre)
+                         .Include(m => m.Movie_Countries)
+                         .AsQueryable();
 
+            if (genreId.HasValue)
+            {
+                query = query.Where(m => m.GenreID == genreId.Value);
+            }
 
-    
-}
+            if (countryId.HasValue)
+            {
+                query = query.Where(m => m.Movie_Countries.Any(c => c.CountryID == countryId.Value));
+            }
+
+            return query.ToList();
+        }
+    }
 }

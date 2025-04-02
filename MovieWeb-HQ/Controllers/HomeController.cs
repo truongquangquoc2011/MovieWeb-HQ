@@ -20,9 +20,10 @@ namespace MovieWeb_HQ.Controllers
 
         public IActionResult Index()
         {
-            var movies = _movieService.GetAllMovies().OrderBy(x => Guid.NewGuid()).Take(4).ToList();
+            var movies = _movieService.GetAllMovies().OrderBy(x => Guid.NewGuid()).ToList();
             return View(movies);
         }
+
 
 
         public async Task<IActionResult> Details(int? id)
@@ -99,7 +100,21 @@ namespace MovieWeb_HQ.Controllers
             return RedirectToAction("ManageMovies", "Admin");
 
         }
+        public IActionResult Movies(int? genreId, int? countryId)
+        {
+            var movies = _movieService.FilterMovies(genreId, countryId);
 
+            ViewBag.Genres = _movieService.GetAllGenres();
+            ViewBag.Countries = _movieService.GetAllCountries();
 
+            return View(movies); // Trả về View Movies.cshtml
+        }
+        public async Task<IActionResult> MoviePlayer(int id)
+        {
+            var movie = await _movieService.GetMovieDetailsAsync(id);
+            if (movie == null) return NotFound();
+
+            return View(movie);  // Trả về view MoviePlayer.cshtml với thông tin phim
+        }
     }
 }

@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace MovieWeb_HQ.Models
 {
-    public class WatchHistory
+    public class WatchHS
     {
         public int Id { get; set; }
         public string UserId { get; set; }

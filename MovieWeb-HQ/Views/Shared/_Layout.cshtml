@@ -31,7 +31,9 @@
                 <ul>
                     <li><a asp-controller="Home" asp-action="Index"> Home</a></li>
                     <li><a href="#" id="series">Series</a></li>
-                    <li><a href="#" id="movies">Movies</a></li>
+                    
+                    <li><a id="movies" href="@Url.Action("Movies", "Home")">Movies</a></li>
+
                     <!-- <li><a href="#">Kids</a></li> -->
                 </ul>
             </div>
@@ -64,6 +66,7 @@
                             {
                                 <a href="@Url.Action("ManageMovies", "Admin")">EDIT MOVIE</a>
                             }
+                            <a href="@Url.Action("WatchHistory", "WatchHistory")">LỊCH SỬ XEM</a>
                             <a href="@Url.Action("Logout", "Account")">LOGOUT</a>
                         </div>
                     </div>
