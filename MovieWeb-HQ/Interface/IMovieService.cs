@@ -18,6 +18,7 @@ namespace MovieWeb_HQ.Interface
         Task<List<int>> GetCountriesByMovieId(int movieId);
         Task<List<Country>> GetAllCountriesAsync();
         List<Movie> FilterMovies(int? genreId, int? countryId);
+        Task<List<Movie>> GetTop4HistoryMoviesAsync();
 
 
     }

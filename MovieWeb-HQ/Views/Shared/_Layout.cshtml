@@ -18,10 +18,19 @@
           href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <!-- Fancybox CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.css">
-
+    <link rel="stylesheet" href="/css/StyleSheet.css" />
     <title>HQ CINEMA</title>
+
 </head>
 <body>
+    <div id="intro">
+        <h1 class="intro-text">HQ CINEMA</h1>
+        <audio id="intro-audio" autoplay>
+            <source src="~/sounds/intro.mp3.m4a" type="audio/mpeg" />
+        </audio>
+    </div>
+
+
     <header>
         @RenderSection("CustomHeader", required: false)
         <nav>
@@ -78,10 +87,7 @@
                 }
             </div>
             </div>
-            <div class="toggle-container">
-                <input type="checkbox" id="darkModeToggle" class="toggle-input">
-                <label for="darkModeToggle" class="toggle-label"></label>
-            </div>
+            
 
         </nav>
         <div class="content" >
@@ -186,6 +192,23 @@
 
 
 
+    </script>
+    <script>
+        window.addEventListener('load', function () {
+            const audio = document.getElementById('intro-audio');
+
+            setTimeout(function () {
+                const intro = document.getElementById('intro');
+                if (intro) {
+                    intro.remove();
+                }
+                // Stop the music
+                if (audio) {
+                    audio.pause();
+                    audio.currentTime = 0;
+                }
+            }, 3000);
+        });
     </script>
 
     

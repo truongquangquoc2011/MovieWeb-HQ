@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "XID/k36g+Ul0QI1yLBeYBbiJ3jlKmMWxWL4HnMNji2Q=",
+  "Hash": "84LMNLyE3duL79hht7WR/H6ODA2CfL8ffqpD2zqSLN0=",
   "Source": "MovieWeb-HQ",
   "BasePath": "_content/MovieWeb-HQ",
   "Mode": "Default",
@@ -1271,6 +1271,25 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\StyleSheet.css",
+      "SourceId": "MovieWeb-HQ",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\",
+      "BasePath": "_content/MovieWeb-HQ",
+      "RelativePath": "css/StyleSheet.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\StyleSheet.css"
+    },
+    {
       "Identity": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\favicon.ico",
       "SourceId": "MovieWeb-HQ",
       "SourceType": "Discovered",
@@ -2392,6 +2411,25 @@
       "OriginalItemSpec": "wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
     },
     {
+      "Identity": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\sounds\\intro.mp3.m4a",
+      "SourceId": "MovieWeb-HQ",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\",
+      "BasePath": "_content/MovieWeb-HQ",
+      "RelativePath": "sounds/intro.mp3.m4a",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\sounds\\intro.mp3.m4a"
+    },
+    {
       "Identity": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\01746514-7599-4a6b-92c1-f7b10bad709b.jpg",
       "SourceId": "MovieWeb-HQ",
       "SourceType": "Discovered",
@@ -3492,6 +3530,25 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\uploads\\eternals1.webp"
+    },
+    {
+      "Identity": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\f3a09203-ef95-47ba-ba4a-c46a4c57ada7.jpg",
+      "SourceId": "MovieWeb-HQ",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\",
+      "BasePath": "_content/MovieWeb-HQ",
+      "RelativePath": "uploads/f3a09203-ef95-47ba-ba4a-c46a4c57ada7.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\f3a09203-ef95-47ba-ba4a-c46a4c57ada7.jpg"
     },
     {
       "Identity": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\f4ebf198-31cb-48f7-bb48-3b66af4efdf9.webp",

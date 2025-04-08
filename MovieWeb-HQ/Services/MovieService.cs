@@ -171,5 +171,16 @@ namespace MovieWeb_HQ.Services
 
             return query.ToList();
         }
+
+        public async Task<List<Movie>> GetTop4HistoryMoviesAsync()
+        {
+            return await _context.Movies
+                .Include(m => m.Genre)
+                .Where(m => m.Genre != null && m.Genre.GenreName.ToLower().Contains("lịch sử"))
+                .OrderByDescending(m => m.IMDB_Rating) // hoặc Year, tùy bạn
+                .Take(4)
+                .ToListAsync();
+        }
+
     }
 }

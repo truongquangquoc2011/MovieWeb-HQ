@@ -5,6 +5,7 @@ using Microsoft.EntityFrameworkCore;
 using MovieWeb_HQ.Interface;
 using MovieWeb_HQ.Models;
 using MovieWeb_HQ.Services;
+using System.Security.Claims;
 
 namespace MovieWeb_HQ.Controllers
 {
@@ -12,10 +13,13 @@ namespace MovieWeb_HQ.Controllers
     public class HomeController : Controller
     {
         private readonly IMovieService _movieService;
-
-        public HomeController(IMovieService movieService)
+        private readonly ICommentService _commentService;  // Thêm comment service
+        private readonly IRatingService _ratingService;    // Thêm rating service
+        public HomeController(IMovieService movieService, ICommentService commentService, IRatingService ratingService)
         {
             _movieService = movieService;
+            _commentService = commentService; // Gán vào biến private
+            _ratingService = ratingService;   
         }
 
         public IActionResult Index()
@@ -109,12 +113,50 @@ namespace MovieWeb_HQ.Controllers
 
             return View(movies); // Trả về View Movies.cshtml
         }
+        
         public async Task<IActionResult> MoviePlayer(int id)
         {
             var movie = await _movieService.GetMovieDetailsAsync(id);
             if (movie == null) return NotFound();
-
+            var comments = await _commentService.GetCommentsByMovieIdAsync(id);
+            var averageRating = await _ratingService.GetAverageRatingAsync(id);
+            ViewBag.Comments = comments;
+            ViewBag.AverageRating = averageRating;
+            bool isAllowed = User.IsInRole("Admin") || User.IsInRole("Member");
+            ViewBag.IsAllowed = isAllowed;
             return View(movie);  // Trả về view MoviePlayer.cshtml với thông tin phim
+
         }
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> AddComment(int movieId, string content)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var comment = new Comment
+            {
+                MovieID = movieId,
+                UserID = userId,
+                Content = content
+            };
+            await _commentService.AddCommentAsync(comment);
+            return RedirectToAction("MoviePlayer", new { id = movieId });
+        }
+
+        [Authorize]
+        [HttpPost]
+        public async Task<IActionResult> AddRating(int movieId, int stars)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            var rating = new Rating
+            {
+                MovieID = movieId,
+                UserID = userId,
+                Stars = stars
+            };
+            await _ratingService.AddRatingAsync(rating);
+            return RedirectToAction("MoviePlayer", new { id = movieId });
+        }
+
+
     }
 }

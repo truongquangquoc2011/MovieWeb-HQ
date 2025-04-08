@@ -22,7 +22,6 @@ namespace MovieWeb_HQ.Models
         public Genre Genre { get; set; }
 
         public double IMDB_Rating { get; set; }
-
         public string Thumbnail { get; set; }  // Link ảnh
         public string VideoURL { get; set; }   // Link video
         public string TrailerURL { get; set; }   // Link trailer 
@@ -30,6 +29,8 @@ namespace MovieWeb_HQ.Models
         public DateTime CreatedAt { get; set; } = DateTime.Now;
 
         public ICollection<Movie_Country> Movie_Countries { get; set; }
+        public ICollection<Comment> Comments { get; set; }
+        public ICollection<Rating> Ratings { get; set; }
 
 
     }

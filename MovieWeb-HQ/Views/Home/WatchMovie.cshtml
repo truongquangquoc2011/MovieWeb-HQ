@@ -1,6 +1,5 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
-    var isAllowed = User.IsInRole("Admin") || User.IsInRole("Member");
 }
 
 
@@ -154,43 +153,8 @@
 <!-- JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js"></script>
-<!--
-<script>
-    $(document).ready(function () {
-        $("#play").click(function (e) {
-            e.preventDefault();
 
-            let isAllowed = @isAllowed.ToString().ToLower();
 
-            if (!isAllowed) {
-                $("#membershipOverlay").fadeIn();
-                return;
-            }
-
-            let videoURL = "@Model.VideoURL";
-            if (!videoURL) {
-                alert("Video không khả dụng!");
-                return;
-            }
-
-            $.fancybox.open({
-                src: `<video controls autoplay>
-                            <source src="${videoURL}" type="video/mp4">
-                          </video>`,
-                type: 'html',
-                opts: {
-                    afterShow: function (instance, current) {
-                        $("video")[0].play();
-                    }
-                }
-            });
-        });
-
-        $("#closeOverlay").click(function () {
-            $("#membershipOverlay").fadeOut();
-        });
-    });
-</script> -->
 <script>
     $(document).ready(function () {
         let movieId = @Model.MovieID;

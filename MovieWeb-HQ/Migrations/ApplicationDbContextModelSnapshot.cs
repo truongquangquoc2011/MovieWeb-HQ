@@ -227,6 +227,37 @@ namespace MovieWeb_HQ.Migrations
                     b.ToTable("AspNetUsers", (string)null);
                 });
 
+            modelBuilder.Entity("MovieWeb_HQ.Models.Comment", b =>
+                {
+                    b.Property<int>("CommentID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("CommentID"));
+
+                    b.Property<string>("Content")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("MovieID")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("CommentID");
+
+                    b.HasIndex("MovieID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Comments");
+                });
+
             modelBuilder.Entity("MovieWeb_HQ.Models.Country", b =>
                 {
                     b.Property<int>("CountryID")
@@ -326,6 +357,33 @@ namespace MovieWeb_HQ.Migrations
                     b.ToTable("Movie_Countries");
                 });
 
+            modelBuilder.Entity("MovieWeb_HQ.Models.Rating", b =>
+                {
+                    b.Property<int>("RatingID")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("RatingID"));
+
+                    b.Property<int>("MovieID")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Stars")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserID")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("RatingID");
+
+                    b.HasIndex("MovieID");
+
+                    b.HasIndex("UserID");
+
+                    b.ToTable("Ratings");
+                });
+
             modelBuilder.Entity("MovieWeb_HQ.Models.WatchHS", b =>
                 {
                     b.Property<int>("Id")
@@ -402,6 +460,25 @@ namespace MovieWeb_HQ.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("MovieWeb_HQ.Models.Comment", b =>
+                {
+                    b.HasOne("MovieWeb_HQ.Models.Movie", "Movie")
+                        .WithMany("Comments")
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MovieWeb_HQ.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("MovieWeb_HQ.Models.Movie", b =>
                 {
                     b.HasOne("MovieWeb_HQ.Models.Genre", "Genre")
@@ -432,6 +509,25 @@ namespace MovieWeb_HQ.Migrations
                     b.Navigation("Movie");
                 });
 
+            modelBuilder.Entity("MovieWeb_HQ.Models.Rating", b =>
+                {
+                    b.HasOne("MovieWeb_HQ.Models.Movie", "Movie")
+                        .WithMany("Ratings")
+                        .HasForeignKey("MovieID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("MovieWeb_HQ.Models.ApplicationUser", "User")
+                        .WithMany()
+                        .HasForeignKey("UserID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Movie");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("MovieWeb_HQ.Models.WatchHS", b =>
                 {
                     b.HasOne("MovieWeb_HQ.Models.Movie", "Movie")
@@ -455,7 +551,11 @@ namespace MovieWeb_HQ.Migrations
 
             modelBuilder.Entity("MovieWeb_HQ.Models.Movie", b =>
                 {
+                    b.Navigation("Comments");
+
                     b.Navigation("Movie_Countries");
+
+                    b.Navigation("Ratings");
                 });
 #pragma warning restore 612, 618
         }

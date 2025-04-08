@@ -1,6 +1,16 @@
 ﻿@{
     ViewData["Title"] = "Watch Movie";
+    bool isAllowed = ViewBag.IsAllowed ?? false;
 }
+<!-- Overlay -->
+<div id="membershipOverlay">
+    <div class="overlay-content">
+        <h2>Nội dung này dành cho hội viên!</h2>
+        <p>Vui lòng đăng ký thành viên để có trải nghiệm tốt nhất.</p>
+        <a href="@Url.Action("Index", "Payment")" class="btn btn-primary">Đăng ký ngay</a>
+        
+    </div>
+</div>
 <div class="Xemphim">
 <!-- Lấy dữ liệu từ model -->
 <h1>@Model.Title</h1>
@@ -12,9 +22,51 @@
         <source src="@Model.VideoURL" type="video/mp4">
         Your browser does not support the video tag.
     </video>
+</div>n
 </div>
+    <h2>Đánh giá phim</h2>
+   <form method="post" asp-action="AddRating" class="rating-form">
+    <input type="hidden" name="movieId" value="@Model.MovieID" />
+    <div class="rating-stars">
+        <input type="radio" id="star5" name="stars" value="5" required><label for="star5">★</label>
+        <input type="radio" id="star4" name="stars" value="4"><label for="star4">★</label>
+        <input type="radio" id="star3" name="stars" value="3"><label for="star3">★</label>
+        <input type="radio" id="star2" name="stars" value="2"><label for="star2">★</label>
+        <input type="radio" id="star1" name="stars" value="1"><label for="star1">★</label>
+    </div>
+    <button type="submit" class="btn-submit">Đánh giá</button>
+</form>
+    <h3>Đánh giá trung bình: @ViewBag.AverageRating sao</h3>
+    <!-- Khung bình luận -->
+    <div class="comment-section">
+        <h2>Bình luận</h2>
+        <form method="post" asp-action="AddComment">
+            <input type="hidden" name="movieId" value="@Model.MovieID" />
+            <textarea name="content" required placeholder="Viết bình luận của bạn..."></textarea>
+            <button type="submit">Gửi</button>
+        </form>
+
+        @if (ViewBag.Comments != null && ViewBag.Comments.Count > 0)
+        {
+            <h3>Danh sách bình luận</h3>
+            <ul class="comment-list">
+                @foreach (var comment in ViewBag.Comments)
+                {
+                    <li>
+                        <p><b>@(comment.User?.FullName ?? "Người dùng ẩn danh")</b></p>
+                        <p class="date">@comment.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
+                        <p class="content">@comment.Content</p>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p class="no-comments">Chưa có bình luận nào.</p>
+        }
+    </div>
 </div>
-</div>
+
 <style>
     .Xemphim {
         height: 80vh; /* Chiều cao toàn màn hình */
@@ -68,5 +120,163 @@
         object-fit: cover !important; /* Video sẽ bao phủ toàn bộ khung */
         border-radius: 10px;
     }
+ 
+    /* Đánh giá phim */
+    .rating-form {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .rating-stars {
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+
+        .rating-stars input {
+            display: none;
+        }
+
+        .rating-stars label {
+            font-size: 30px;
+            color: gray;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        .rating-stars input:checked ~ label {
+            color: gold;
+        }
+
+    /* Khung bình luận */
+    .comment-section {
+        margin-top: 40px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.3); /* Nền trong suốt với màu đen */
+        color: white; /* Chữ trắng */
+        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+    }
+
+        .comment-section h2 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        .comment-section form {
+            margin-bottom: 20px;
+        }
+
+        .comment-section textarea {
+            width: 100%;
+            height: 120px;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            resize: none;
+            font-size: 1rem;
+            margin-bottom: 10px;
+            outline: none;
+            background-color: rgba(255, 255, 255, 0.2); /* Nền textarea trong suốt */
+            color: white; /* Chữ trắng trong textarea */
+        }
+
+        .comment-section button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s;
+        }
+
+            .comment-section button:hover {
+                background-color: #0056b3;
+            }
+    /* Hiển thị danh sách bình luận */
+    .comment-list {
+        list-style-type: none;
+        padding: 0;
+    }
+
+        .comment-list li {
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            background-color: #fff;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+            .comment-list li p {
+                margin: 0;
+                font-size: 1rem;
+                color: #333;
+            }
+
+            .comment-list li b {
+                font-size: 1.1rem;
+                color: #007bff;
+            }
+
+            .comment-list li .date {
+                font-size: 0.9rem;
+                color: #888;
+                margin-top: 5px;
+            }
+
+            .comment-list li .content {
+                margin-top: 10px;
+                font-size: 1rem;
+            }
+
+    .no-comments {
+        font-size: 1.2rem;
+        color: #555;
+        margin-top: 20px;
+    }
 
 </style>
+<style>
+    #membershipOverlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        display: none; /* Mặc định ẩn */
+        align-items: center;
+        justify-content: center;
+        z-index: 9999;
+    }
+
+    .overlay-content {
+        background: white;
+        padding: 20px;
+        border-radius: 10px;
+        text-align: center;
+        max-width: 400px;
+    }
+
+        .overlay-content h2 {
+            color: red;
+        }
+</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        var isAllowed = @Json.Serialize(isAllowed);
+
+        // Nếu không phải Admin hoặc Member, hiển thị overlay
+        if (!isAllowed) {
+            $("#membershipOverlay").fadeIn();
+        }
+
+        $("#closeOverlay").click(function () {
+            $("#membershipOverlay").fadeOut();
+        });
+    });
+</script>

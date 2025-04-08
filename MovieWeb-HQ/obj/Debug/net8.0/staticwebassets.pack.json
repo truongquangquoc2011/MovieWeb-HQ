@@ -9,6 +9,10 @@
       "PackagePath": "staticwebassets\\css\\Search1.css"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\StyleSheet.css",
+      "PackagePath": "staticwebassets\\css\\StyleSheet.css"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\dark-mode.css",
       "PackagePath": "staticwebassets\\css\\dark-mode.css"
     },
@@ -255,6 +259,10 @@
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\sounds\\intro.mp3.m4a",
+      "PackagePath": "staticwebassets\\sounds\\intro.mp3.m4a"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\01746514-7599-4a6b-92c1-f7b10bad709b.jpg",
@@ -507,6 +515,10 @@
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\eternals1.webp",
       "PackagePath": "staticwebassets\\uploads\\eternals1.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\f3a09203-ef95-47ba-ba4a-c46a4c57ada7.jpg",
+      "PackagePath": "staticwebassets\\uploads\\f3a09203-ef95-47ba-ba4a-c46a4c57ada7.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\f4ebf198-31cb-48f7-bb48-3b66af4efdf9.webp",
