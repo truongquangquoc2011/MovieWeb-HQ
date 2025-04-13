@@ -2,6 +2,8 @@
     ViewData["Title"] = "Watch Movie";
     bool isAllowed = ViewBag.IsAllowed ?? false;
 }
+<script src="https://cdn.jsdelivr.net/npm/hls.js@latest"></script>
+
 <!-- Overlay -->
 <div id="membershipOverlay">
     <div class="overlay-content">
@@ -27,13 +29,13 @@
     <h2>Đánh giá phim</h2>
    <form method="post" asp-action="AddRating" class="rating-form">
     <input type="hidden" name="movieId" value="@Model.MovieID" />
-    <div class="rating-stars">
-        <input type="radio" id="star5" name="stars" value="5" required><label for="star5">★</label>
-        <input type="radio" id="star4" name="stars" value="4"><label for="star4">★</label>
-        <input type="radio" id="star3" name="stars" value="3"><label for="star3">★</label>
-        <input type="radio" id="star2" name="stars" value="2"><label for="star2">★</label>
-        <input type="radio" id="star1" name="stars" value="1"><label for="star1">★</label>
-    </div>
+        <div class="rating-stars">
+            <input type="radio" id="star1" name="stars" value="1" required><label for="star1">★</label>
+            <input type="radio" id="star2" name="stars" value="2"><label for="star2">★</label>
+            <input type="radio" id="star3" name="stars" value="3"><label for="star3">★</label>
+            <input type="radio" id="star4" name="stars" value="4"><label for="star4">★</label>
+            <input type="radio" id="star5" name="stars" value="5"><label for="star5">★</label>
+        </div>
     <button type="submit" class="btn-submit">Đánh giá</button>
 </form>
     <h3>Đánh giá trung bình: @ViewBag.AverageRating sao</h3>
@@ -52,12 +54,19 @@
             <ul class="comment-list">
                 @foreach (var comment in ViewBag.Comments)
                 {
+                    var name = comment.User?.FullName ?? "Ẩn danh";
+                    var initials = name.Substring(0, 1).ToUpper();
+
                     <li>
-                        <p><b>@(comment.User?.FullName ?? "Người dùng ẩn danh")</b></p>
-                        <p class="date">@comment.CreatedAt.ToString("dd/MM/yyyy HH:mm")</p>
-                        <p class="content">@comment.Content</p>
+                        <div class="avatar">@initials</div>
+                        <div class="comment-content">
+                            <div class="username">@name</div>
+                            <div class="date">@comment.CreatedAt.ToString("dd/MM/yyyy HH:mm")</div>
+                            <div class="text">@comment.Content</div>
+                        </div>
                     </li>
                 }
+
             </ul>
         }
         else
@@ -121,124 +130,189 @@
         border-radius: 10px;
     }
  
-    /* Đánh giá phim */
+    </style>
+<style>
     .rating-form {
+        margin: 20px auto;
         text-align: center;
-        margin-bottom: 20px;
     }
 
     .rating-stars {
         display: flex;
+        flex-direction: row; /* HIỂN THỊ TRÁI → PHẢI */
         justify-content: center;
-        gap: 5px;
+        gap: 10px;
     }
 
-        .rating-stars input {
+        .rating-stars input[type="radio"] {
             display: none;
         }
 
         .rating-stars label {
-            font-size: 30px;
-            color: gray;
+            font-size: 2.5rem;
+            color: #ccc;
             cursor: pointer;
-            transition: color 0.3s;
+            transition: transform 0.2s, color 0.3s;
         }
 
-        .rating-stars input:checked ~ label {
+        /* Khi sao được chọn, chỉ sao đó đổi màu */
+        .rating-stars input[type="radio"]:checked + label {
             color: gold;
+            transform: scale(1.2);
+        }
+</style>
+<style>
+    .btn-submit {
+        margin-top: 10px;
+        padding: 10px 20px;
+        font-size: 1rem;
+        background-color: #ffc107;
+        color: #000;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+        .btn-submit:hover {
+            background-color: #e0a800;
         }
 
-    /* Khung bình luận */
+    /* PHẦN BÌNH LUẬN  */
     .comment-section {
         margin-top: 40px;
-        padding: 20px;
-        border-radius: 10px;
-        background-color: rgba(255, 255, 255, 0.3); /* Nền trong suốt với màu đen */
-        color: white; /* Chữ trắng */
-        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.3);
+        padding: 30px;
+        border-radius: 20px;
+        background: linear-gradient(to bottom right, #f1f4f9, #ffffff);
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+        color: #333;
+        max-width: 900px;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: 'Segoe UI', sans-serif;
     }
 
         .comment-section h2 {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
+            margin-bottom: 25px;
+            font-size: 2rem;
+            color: #2c3e50;
+            text-align: center;
+            border-bottom: 2px solid #007bff;
+            padding-bottom: 10px;
         }
 
         .comment-section form {
-            margin-bottom: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
         }
 
-        .comment-section textarea {
-            width: 100%;
-            height: 120px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            resize: none;
-            font-size: 1rem;
-            margin-bottom: 10px;
-            outline: none;
-            background-color: rgba(255, 255, 255, 0.2); /* Nền textarea trong suốt */
-            color: white; /* Chữ trắng trong textarea */
-        }
-
-        .comment-section button {
-            padding: 10px 15px;
-            background-color: #007bff;
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            font-size: 1rem;
-            transition: background-color 0.3s;
-        }
-
-            .comment-section button:hover {
-                background-color: #0056b3;
+            .comment-section form textarea {
+                width: 100%;
+                height: 140px;
+                padding: 18px;
+                font-size: 1rem;
+                border: 2px solid #ced4da;
+                border-radius: 15px;
+                resize: none;
+                background: #fff;
+                color: #333;
+                box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+                transition: border-color 0.3s, box-shadow 0.3s;
             }
-    /* Hiển thị danh sách bình luận */
+
+                .comment-section form textarea:focus {
+                    border-color: #007bff;
+                    outline: none;
+                    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
+                }
+
+            .comment-section form button {
+                align-self: flex-end;
+                background-color: #007bff;
+                color: white;
+                padding: 12px 24px;
+                font-size: 1rem;
+                border: none;
+                border-radius: 8px;
+                cursor: pointer;
+                transition: background-color 0.3s;
+            }
+
+                .comment-section form button:hover {
+                    background-color: #0056b3;
+                }
+
     .comment-list {
         list-style-type: none;
-        padding: 0;
+        padding-left: 0;
+        margin-top: 30px;
     }
 
         .comment-list li {
-            padding: 10px;
-            margin-bottom: 15px;
-            border: 1px solid #ddd;
-            border-radius: 10px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            align-items: flex-start;
+            gap: 15px;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border-left: 5px solid #007bff;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: transform 0.2s ease;
         }
 
-            .comment-list li p {
-                margin: 0;
-                font-size: 1rem;
-                color: #333;
+            .comment-list li:hover {
+                transform: translateY(-3px);
             }
 
-            .comment-list li b {
-                font-size: 1.1rem;
-                color: #007bff;
+            .comment-list li .avatar {
+                width: 45px;
+                height: 45px;
+                background-color: #007bff;
+                border-radius: 50%;
+                color: #fff;
+                font-weight: bold;
+                font-size: 1.2rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-shrink: 0;
+                box-shadow: 0 2px 4px rgba(0,0,0,0.1);
             }
 
-            .comment-list li .date {
-                font-size: 0.9rem;
-                color: #888;
-                margin-top: 5px;
-            }
+    .comment-content {
+        flex: 1;
+    }
 
-            .comment-list li .content {
-                margin-top: 10px;
-                font-size: 1rem;
-            }
+        .comment-content .username {
+            color: #007bff;
+            font-size: 1.1rem;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .comment-content .date {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 10px;
+        }
+
+        .comment-content .text {
+            font-size: 1rem;
+            color: #333;
+        }
 
     .no-comments {
-        font-size: 1.2rem;
-        color: #555;
-        margin-top: 20px;
+        font-size: 1.1rem;
+        color: #999;
+        text-align: center;
+        margin-top: 25px;
+        font-style: italic;
     }
 
 </style>
+
 <style>
     #membershipOverlay {
         position: fixed;

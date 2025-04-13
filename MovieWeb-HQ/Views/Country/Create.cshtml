@@ -1,9 +1,79 @@
 ﻿@model Country
 
-<h2>Thêm Quốc gia</h2>
+<div class="form-wrapper">
+    <h2 class="form-title">Thêm Quốc Gia</h2>
 
-<form asp-controller="Country" asp-action="Create" method="post">
-    <label for="CountryName">Tên Quốc Gia:</label>
-    <input type="text" name="CountryName" required />
-    <button type="submit" class="btn btn-add">➕ Thêm</button>
-</form>
+    <form asp-controller="Country" asp-action="Create" method="post" class="form-container">
+        <label for="CountryName">Tên Quốc Gia:</label>
+        <input type="text" name="CountryName" required class="form-input" />
+        <button type="submit" class="btn btn-add">➕ Thêm</button>
+    </form>
+</div>
+<style>
+    body {
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-wrapper {
+        max-width: 500px;
+        margin: 80px auto;
+        padding: 40px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(12px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.4);
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+        .form-container label {
+            font-size: 18px;
+            text-align: left;
+        }
+
+    .form-input {
+        padding: 12px;
+        font-size: 16px;
+        border: none;
+        border-radius: 10px;
+        background: rgba(255, 255, 255, 0.9);
+        color: #333;
+        outline: none;
+    }
+
+        .form-input:focus {
+            box-shadow: 0 0 8px #00c3ff;
+        }
+
+    .btn {
+        padding: 12px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        border-radius: 8px;
+        color: white;
+        transition: 0.3s;
+    }
+
+    .btn-add {
+        background-color: #28a745;
+    }
+
+        .btn-add:hover {
+            background-color: #218838;
+        }
+</style>

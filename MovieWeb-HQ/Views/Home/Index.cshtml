@@ -1,6 +1,40 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<link rel="stylesheet" href="~/css/PopupEvent.css">
+<!-- Overlay + Popup -->
+<div id="popupOverlay" class="popup-overlay">
+    <div class="popup-content">
+        <span class="close-btn" onclick="closePopup()">×</span>
+        <div class="popup-body">
+            <!-- Bên trái: banner -->
+            <div class="popup-left">
+            </div>
+            <div class="popup-left1">
+                <img class="left-banner" src="/uploads/banner-left-304.webp" alt="Giải phóng 30/4">
+            </div>
+
+            <!-- Bên phải: danh sách phim -->
+            <div class="popup-right">
+                <div class="popup-header">
+                    <p>Hãy cùng thưởng thức những bộ phim lịch sử ý nghĩa!</p>
+                </div>
+                <div class="popup-movies">
+                    @foreach (var movie in ViewBag.HistoryMovies)
+                    {
+                        <div class="movie-card">
+                            <img src="@movie.Thumbnail" alt="@movie.Title">
+                            <p>@movie.Title</p>
+                            <a href="@Url.Action("WatchMovie", "Home", new { id = movie.MovieID })">
+                                Xem phim <i class="bi bi-play-fill"></i>
+                            </a>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 
 @foreach (var movie in Model)
 {
@@ -47,6 +81,11 @@
         // Tự động chuyển slide mỗi 5 giây
         setInterval(updateSlide, 5000);
     });
+</script>
+<script>
+    function closePopup() {
+        document.getElementById("popupOverlay").style.display = "none";
+    }
 </script>
 
 

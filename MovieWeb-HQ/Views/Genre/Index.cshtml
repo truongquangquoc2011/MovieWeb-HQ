@@ -1,36 +1,145 @@
 ﻿@model IEnumerable<Genre>
 
-<h2>Quản lý Thể loại</h2>
-<a asp-action="Create" class="btn btn-primary">Thêm mới</a>
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Tên thể loại</th>
-            <th>Hành động</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var genre in Model)
-        {
-            <tr>
-                <td>@genre.GenreID</td>
-                <td>@genre.GenreName</td>
-                <td>
-                    <a asp-action="Edit" asp-route-id="@genre.GenreID">Sửa</a> |
-                    <a asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.GenreID" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?')">🗑️ Xóa</a>
+<div class="genre-container">
+    <h2 class="genre-title">🎬 Quản lý Thể loại</h2>
 
-                </td>
-            </tr>
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+
+    <a asp-action="Create" class="btn btn-add">➕ Thêm mới</a>
+
+    <div class="table-wrapper">
+        <table class="table-custom">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên thể loại</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var genre in Model)
+                {
+                    <tr>
+                        <td>@genre.GenreID</td>
+                        <td>@genre.GenreName</td>
+                        <td>
+                            <a asp-action="Edit" asp-route-id="@genre.GenreID" class="btn btn-edit">✏️ Sửa</a>
+                            <a asp-controller="Genre" asp-action="Delete" asp-route-id="@genre.GenreID" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?')">🗑️ Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<style>
+    body {
+      
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .genre-container {
+        max-width: 900px;
+        margin: 80px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .genre-title {
+        font-size: 28px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        text-align: center;
+        color: #00e0ff;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        font-size: 14px;
+        border: none;
+        border-radius: 6px;
+        cursor: pointer;
+        text-decoration: none;
+        color: white;
+        transition: background 0.3s ease;
+        margin-right: 5px;
+    }
+
+    .btn-add {
+        background: #28a745;
+        margin-bottom: 20px;
+    }
+
+        .btn-add:hover {
+            background: #218838;
         }
-    </tbody>
-</table>
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
-}
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-}
 
+    .btn-edit {
+        background: #ffc107;
+    }
+
+        .btn-edit:hover {
+            background: #e0a800;
+        }
+
+    .btn-delete {
+        background: #dc3545;
+    }
+
+        .btn-delete:hover {
+            background: #c82333;
+        }
+
+    .table-wrapper {
+        overflow-x: auto;
+    }
+
+    .table-custom {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(0, 0, 0, 0.7);
+    }
+
+        .table-custom th, .table-custom td {
+            padding: 12px 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            text-align: center;
+        }
+
+        .table-custom thead {
+            background: rgba(0, 0, 0, 0.9);
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+    .alert {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+        text-align: center;
+    }
+
+    .alert-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .alert-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>

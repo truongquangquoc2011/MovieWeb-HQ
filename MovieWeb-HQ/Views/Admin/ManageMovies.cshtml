@@ -30,7 +30,7 @@
                 {
                     <tr>
                         <td>@movie.Title</td>
-                        <td>@movie.Description</td>
+                        <td class=" movie-description">@movie.Description</td>
                         <td>@movie.Year</td>
                         <td>@movie.Genre?.GenreName</td>
                         <td class="imdb">@movie.IMDB_Rating ⭐</td>
@@ -112,6 +112,12 @@
             border: 1px solid rgba(255, 255, 255, 0.2);
         }
 
+    .movie-description {
+        white-space: normal;
+        word-wrap: break-word;
+        word-break: break-word;
+        max-width: 300px; /* Giới hạn chiều ngang để không tràn */
+    }
     .imdb {
         color: gold;
     }

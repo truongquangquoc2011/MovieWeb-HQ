@@ -25,6 +25,8 @@ namespace MovieWeb_HQ.Controllers
         public IActionResult Index()
         {
             var movies = _movieService.GetAllMovies().OrderBy(x => Guid.NewGuid()).ToList();
+            var historyMovies = _movieService.GetTop4HistoryMoviesAsync().Result;
+            ViewBag.HistoryMovies = historyMovies;
             return View(movies);
         }
 

@@ -1,9 +1,76 @@
 ﻿@model Genre
 
-<h2>Xóa thể loại</h2>
-<p>Bạn có chắc muốn xóa thể loại "@Model.GenreName"?</p>
-<form asp-action="Delete" method="post">
-    <input type="hidden" asp-for="GenreID" />
-    <button type="submit" class="btn btn-danger">Xóa</button>
-    <a asp-action="Index" class="btn btn-secondary">Hủy</a>
-</form>
+<div class="form-container">
+    <h2 class="form-title">⚠️ Xóa Thể Loại</h2>
+    <p class="confirm-text">Bạn có chắc muốn xóa thể loại "<strong>@Model.GenreName</strong>"?</p>
+    <form asp-action="Delete" method="post" class="action-buttons">
+        <input type="hidden" asp-for="GenreID" />
+        <button type="submit" class="btn btn-danger">🗑️ Xóa</button>
+        <a asp-action="Index" class="btn btn-cancel">❌ Hủy</a>
+    </form>
+</div>
+<style>
+    body {
+       
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        max-width: 500px;
+        margin: 100px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 20px;
+        color: #ff6b6b;
+    }
+
+    .confirm-text {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    .action-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .btn {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+    .btn-danger {
+        background: #dc3545;
+    }
+
+        .btn-danger:hover {
+            background: #c82333;
+        }
+
+    .btn-cancel {
+        background: #6c757d;
+    }
+
+        .btn-cancel:hover {
+            background: #5a6268;
+        }
+</style>

@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\MovieWeb-HQ.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\PopupEvent.css",
+      "PackagePath": "staticwebassets\\css\\PopupEvent.css"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\css\\Search1.css",
       "PackagePath": "staticwebassets\\css\\Search1.css"
     },
@@ -285,12 +289,20 @@
       "PackagePath": "staticwebassets\\uploads\\0ce39817-425c-482c-9bbe-6a6f009f1e78.png"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\10f7126f-f2b6-4700-8fc1-3739bc8f66c2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\10f7126f-f2b6-4700-8fc1-3739bc8f66c2.jpg"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\13f4f2d3-a35e-47b6-a0f5-34f4b9f8a5f2.jpg",
       "PackagePath": "staticwebassets\\uploads\\13f4f2d3-a35e-47b6-a0f5-34f4b9f8a5f2.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\1b56cafa-7077-4782-8b77-42978494caea.jpg",
       "PackagePath": "staticwebassets\\uploads\\1b56cafa-7077-4782-8b77-42978494caea.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\1d44ad8a-a2c4-4ec6-a94a-4db86b912123.jpg",
+      "PackagePath": "staticwebassets\\uploads\\1d44ad8a-a2c4-4ec6-a94a-4db86b912123.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\20180acc-9b03-45a1-b9c0-5cfafcecee34.jpg",
@@ -313,6 +325,10 @@
       "PackagePath": "staticwebassets\\uploads\\33a4bf23-a0ae-4d16-a6f8-ea0ef041561f.jpg"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\33bacee5-a9ed-4336-83be-8854b551b469.jpg",
+      "PackagePath": "staticwebassets\\uploads\\33bacee5-a9ed-4336-83be-8854b551b469.jpg"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\3bff2072-c918-449c-a788-88dc91411914.png",
       "PackagePath": "staticwebassets\\uploads\\3bff2072-c918-449c-a788-88dc91411914.png"
     },
@@ -327,6 +343,10 @@
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\479806c5-dfcf-4e78-964d-17bfebea8740.jpg",
       "PackagePath": "staticwebassets\\uploads\\479806c5-dfcf-4e78-964d-17bfebea8740.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\47bcbc59-1a5c-466e-bf52-e6cc4ddfad5c.jpg",
+      "PackagePath": "staticwebassets\\uploads\\47bcbc59-1a5c-466e-bf52-e6cc4ddfad5c.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\49fabebb-820f-4b29-9c39-b44e105ed05e.jpg",
@@ -357,12 +377,20 @@
       "PackagePath": "staticwebassets\\uploads\\661d468c-03c9-48ac-84d5-2a00d16f5a14.jpg"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\6645668d-1bc7-4cfc-8388-0effbea78736.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6645668d-1bc7-4cfc-8388-0effbea78736.jpg"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\66bca4da-ed67-4800-a7dc-bf1705652808.jpg",
       "PackagePath": "staticwebassets\\uploads\\66bca4da-ed67-4800-a7dc-bf1705652808.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\6ec023a5-6b30-43fe-8641-aab46b0e55d1.jpg",
       "PackagePath": "staticwebassets\\uploads\\6ec023a5-6b30-43fe-8641-aab46b0e55d1.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\6f69ecac-fa25-4940-b8c7-50ba3b2a1c69.jpg",
+      "PackagePath": "staticwebassets\\uploads\\6f69ecac-fa25-4940-b8c7-50ba3b2a1c69.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\74e6de41-e75f-47e8-a452-9f0c226d1724.jpg",
@@ -393,6 +421,10 @@
       "PackagePath": "staticwebassets\\uploads\\996cd43d-352c-4295-ae80-b5aaa3d72488.jpg"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\Daophovapiano.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Daophovapiano.jpg"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\HWKQXjYWd9xoIZl53z3c.webp",
       "PackagePath": "staticwebassets\\uploads\\HWKQXjYWd9xoIZl53z3c.webp"
     },
@@ -405,8 +437,20 @@
       "PackagePath": "staticwebassets\\uploads\\KGF.jpg"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\KongDaodaulau.jpg",
+      "PackagePath": "staticwebassets\\uploads\\KongDaodaulau.jpg"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\KongIssan.jpg",
       "PackagePath": "staticwebassets\\uploads\\KongIssan.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\Muicochay.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Muicochay.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\Những người viết huyền thoại.jpg",
+      "PackagePath": "staticwebassets\\uploads\\Những người viết huyền thoại.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\Phong chua bi mat.jpg",
@@ -449,12 +493,24 @@
       "PackagePath": "staticwebassets\\uploads\\bace5cd4-f053-4569-949e-d24e0358a734.jpg"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\banner-left-304.webp",
+      "PackagePath": "staticwebassets\\uploads\\banner-left-304.webp"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\bb78aefc-aebf-4ff9-8e5a-6e82bff8523b.jpg",
       "PackagePath": "staticwebassets\\uploads\\bb78aefc-aebf-4ff9-8e5a-6e82bff8523b.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\bc66d502-9511-4054-90ce-7ef437080fbb.jpg",
       "PackagePath": "staticwebassets\\uploads\\bc66d502-9511-4054-90ce-7ef437080fbb.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\behind-hero.webp",
+      "PackagePath": "staticwebassets\\uploads\\behind-hero.webp"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\buidoicholon.jpg",
+      "PackagePath": "staticwebassets\\uploads\\buidoicholon.jpg"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\c26b00fe-12e2-4c09-94f3-38f57df3002e.jpg",
@@ -483,6 +539,10 @@
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\d3745138-9593-4802-8730-263fe81d2daa.jpg",
       "PackagePath": "staticwebassets\\uploads\\d3745138-9593-4802-8730-263fe81d2daa.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\d9794c8b-8b28-44ac-afd6-b91a9acf29ce.webp",
+      "PackagePath": "staticwebassets\\uploads\\d9794c8b-8b28-44ac-afd6-b91a9acf29ce.webp"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\ddbe0b16-80e1-4e7e-8df9-9f023e87ec61.png",
@@ -625,8 +685,44 @@
       "PackagePath": "staticwebassets\\uploads\\user.jpg"
     },
     {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\uploads\\vituyen17.jpg",
+      "PackagePath": "staticwebassets\\uploads\\vituyen17.jpg"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\DaoPhoPianoDa.mp4",
+      "PackagePath": "staticwebassets\\video\\DaoPhoPianoDa.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\DaoPhoVaPiano.mp4",
+      "PackagePath": "staticwebassets\\video\\DaoPhoVaPiano.mp4"
+    },
+    {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\KingCongTrai.mp4",
       "PackagePath": "staticwebassets\\video\\KingCongTrai.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\Muicochay.mp4",
+      "PackagePath": "staticwebassets\\video\\Muicochay.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\Nguoiviethuyenthoai.mp4",
+      "PackagePath": "staticwebassets\\video\\Nguoiviethuyenthoai.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\Trailer-nguoiviethuyenthoai.mp4",
+      "PackagePath": "staticwebassets\\video\\Trailer-nguoiviethuyenthoai.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\buidoicholon.mp4",
+      "PackagePath": "staticwebassets\\video\\buidoicholon.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\buidoicholontrailer.mp4",
+      "PackagePath": "staticwebassets\\video\\buidoicholontrailer.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\dotlua.mp4",
+      "PackagePath": "staticwebassets\\video\\dotlua.mp4"
     },
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\john wick.webm",
@@ -639,6 +735,18 @@
     {
       "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\theboys.webm",
       "PackagePath": "staticwebassets\\video\\theboys.webm"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\thor.webm",
+      "PackagePath": "staticwebassets\\video\\thor.webm"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\trailer-muicochay.mp4",
+      "PackagePath": "staticwebassets\\video\\trailer-muicochay.mp4"
+    },
+    {
+      "Id": "C:\\Users\\hisis\\OneDrive\\Máy tính\\MovieWeb-HQ\\MovieWeb-HQ\\wwwroot\\video\\vituyen17.mp4",
+      "PackagePath": "staticwebassets\\video\\vituyen17.mp4"
     },
     {
       "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.MovieWeb-HQ.Microsoft.AspNetCore.StaticWebAssets.props",

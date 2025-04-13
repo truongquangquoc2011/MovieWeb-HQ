@@ -18,17 +18,18 @@
         background: linear-gradient(to right, #141e30, #243b55);
         color: white;
         font-family: 'Quicksand', sans-serif;
+        font-size: 20px; /* Tăng kích thước chữ chung */
     }
 
     .profile-container {
-        max-width: 450px;
-        margin: 50px auto;
-        padding: 25px;
+        max-width: 600px; /* Tăng chiều rộng */
+        margin: 70px auto;
+        padding: 40px;
         background: rgba(255, 255, 255, 0.15);
         backdrop-filter: blur(10px);
-        border-radius: 15px;
+        border-radius: 20px;
         text-align: center;
-        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
     }
 
     .avatar-wrapper {
@@ -37,24 +38,30 @@
     }
 
     .avatar {
-        width: 120px;
-        height: 120px;
+        width: 150px; /* Tăng kích thước avatar */
+        height: 150px;
         border-radius: 50%;
-        border: 4px solid white;
-        box-shadow: 0 4px 8px rgba(255, 255, 255, 0.2);
+        border: 5px solid white;
+        box-shadow: 0 6px 12px rgba(255, 255, 255, 0.25);
     }
 
     .profile-title {
-        margin-top: 15px;
-        font-size: 22px;
-        font-weight: 600;
+        margin-top: 20px;
+        font-size: 28px; /* Tăng kích thước tiêu đề */
+        font-weight: 700;
+    }
+
+    .profile-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .profile-info p {
-        font-size: 16px;
-        margin: 8px 0;
-        padding: 8px;
-        border-radius: 8px;
-        background: rgba(255, 255, 255, 0.1);
+        font-size: 18px!important; /* Tăng kích thước nội dung */
+        margin: 12px 0 !important;
+        padding: 12px !important;
+        border-radius: 10px !important;
+        background: rgba(255, 255, 255, 0.12) !important;
     }
 </style>

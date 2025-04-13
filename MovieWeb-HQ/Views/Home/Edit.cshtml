@@ -52,7 +52,8 @@
                             <option value="">-- Chọn thể loại --</option>
                             @foreach (var genre in ViewBag.Genres)
                             {
-                                <option value="@genre.Value">@genre.Text</option>
+                                <option class=" colorh"  value="@genre.Value">@genre.Text</option>
+
                             }
                         </select>
                         <span asp-validation-for="GenreID" class="error-message"></span>
@@ -63,7 +64,7 @@
                         <select name="SelectedCountries" class="input-field" multiple>
                             @foreach (var country in ViewBag.Countries)
                             {
-                                <option value="@country.Value">@country.Text</option>
+                                <option style="background : black;" value="@country.Value">@country.Text</option>
                             }
                         </select>
                         <small class="text-muted">Nhấn giữ Ctrl để chọn nhiều quốc gia</small>
@@ -119,10 +120,15 @@
         border: 1px solid rgba(255, 255, 255, 0.3);
         border-radius: 6px;
         background: rgba(255, 255, 255, 0.2);
-        color: white;
+        color: white; /* Màu chữ của select/input */
         font-size: 16px;
         outline: none;
     }
+        /* Áp dụng màu trắng cho các option trong select */
+        .input-field option {
+            background: black!important; /* Nếu muốn nền đen */
+            color: white!important /* Màu chữ trắng */
+        }
 
         .input-field::placeholder {
             color: rgba(255, 255, 255, 0.6);
@@ -186,6 +192,5 @@
         color: red;
         font-size: 14px;
     }
-
 
 </style>

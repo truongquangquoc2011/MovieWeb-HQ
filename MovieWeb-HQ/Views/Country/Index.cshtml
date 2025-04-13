@@ -1,37 +1,149 @@
 ﻿@model List<Country>
 
-<h2>🌍 Danh sách Quốc gia</h2>
+<div class="country-list-container">
+    <h2 class="list-title">🌍 Danh sách Quốc Gia</h2>
 
-@if (TempData["ErrorMessage"] != null)
-{
-    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
-}
-@if (TempData["SuccessMessage"] != null)
-{
-    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
-}
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
 
-<a href="@Url.Action("Create", "Country")" class="btn btn-add">➕ Thêm Quốc gia</a>
+    <div class="action-bar">
+        <a href="@Url.Action("Create", "Country")" class="btn btn-add">➕ Thêm Quốc gia</a>
+    </div>
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>ID</th>
-            <th>Tên Quốc Gia</th>
-            <th>Hành động</th>
-        </tr>
-    </thead>
-    <tbody>
-        @foreach (var country in Model)
-        {
-            <tr>
-                <td>@country.CountryID</td>
-                <td>@country.CountryName</td>
-                <td>
-                    <a asp-controller="Country" asp-action="Edit" asp-route-id="@country.CountryID" class="btn btn-warning">Sửa</a>
-                    <a asp-controller="Country" asp-action="Delete" asp-route-id="@country.CountryID" class="btn btn-danger" onclick="return confirm('Bạn có chắc muốn xóa?')">🗑️ Xóa</a>
-                </td>
-            </tr>
+    <div class="table-wrapper">
+        <table class="table country-table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Tên Quốc Gia</th>
+                    <th>Hành động</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var country in Model)
+                {
+                    <tr>
+                        <td>@country.CountryID</td>
+                        <td>@country.CountryName</td>
+                        <td>
+                            <a asp-controller="Country" asp-action="Edit" asp-route-id="@country.CountryID" class="btn btn-edit">✏️ Sửa</a>
+                            <a asp-controller="Country" asp-action="Delete" asp-route-id="@country.CountryID" class="btn btn-delete" onclick="return confirm('Bạn có chắc muốn xóa?')">🗑️ Xóa</a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+<style>
+    body {
+       
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .country-list-container {
+        max-width: 900px;
+        margin: 60px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.07);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    }
+
+    .list-title {
+        font-size: 28px;
+        font-weight: 600;
+        margin-bottom: 25px;
+        text-align: center;
+    }
+
+    .action-bar {
+        text-align: right;
+        margin-bottom: 15px;
+    }
+
+    .table-wrapper {
+        overflow-x: auto;
+        border-radius: 10px;
+    }
+
+    .country-table {
+        width: 100%;
+        border-collapse: collapse;
+        background: rgba(0, 0, 0, 0.4);
+    }
+
+        .country-table th, .country-table td {
+            padding: 14px;
+            border: 1px solid rgba(255, 255, 255, 0.15);
+            text-align: center;
         }
-    </tbody>
-</table>
+
+        .country-table thead {
+            background: rgba(0, 0, 0, 0.6);
+        }
+
+    .btn {
+        padding: 8px 14px;
+        border: none;
+        border-radius: 6px;
+        font-size: 14px;
+        cursor: pointer;
+        color: white;
+        transition: 0.3s ease;
+        text-decoration: none;
+    }
+
+    .btn-add {
+        background: #28a745;
+    }
+
+        .btn-add:hover {
+            background: #218838;
+        }
+
+    .btn-edit {
+        background: #ffc107;
+        color: #222;
+    }
+
+        .btn-edit:hover {
+            background: #e0a800;
+        }
+
+    .btn-delete {
+        background: #dc3545;
+    }
+
+        .btn-delete:hover {
+            background: #c82333;
+        }
+
+    .alert {
+        padding: 12px;
+        border-radius: 6px;
+        margin-bottom: 15px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .alert-success {
+        background-color: #28a745;
+        color: white;
+    }
+
+    .alert-danger {
+        background-color: #dc3545;
+        color: white;
+    }
+</style>

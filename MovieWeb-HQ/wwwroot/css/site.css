@@ -659,3 +659,21 @@ body.dark-mode {
     color: #fff;
 }
 
+@media (max-width: 576px) {
+    .payment-card {
+        padding: 25px 20px;
+    }
+}
+
+/* Optional: animation khi hiện */
+@keyframes popIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}

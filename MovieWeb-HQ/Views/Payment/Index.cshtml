@@ -1,47 +1,118 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
-    var postUrl = "tich-hop-thanh-toan-momo-voi-asp-net-core-7d5e4hP";
-}
+﻿<div class="payment-wrapper">
+    <div class="payment-card">
+        <div class="momo-header">
+            <img src="https://upload.wikimedia.org/wikipedia/vi/f/fe/MoMo_Logo.png" alt="MoMo Logo" />
+            <h2>Thanh toán với MoMo</h2>
+        </div>
 
-<div class="text-center">
-    
-
-    <div class="container">
         <form action="Payment/CreatePaymentUrl" id="frmCreateOrder" method="POST">
             <div class="form-group">
-                <label for="FullName">Tên khách hàng</label>
-                <input class="form-control"
-                       id="FullName"
-                       name="FullName"
-                       type="text"
-                       value="ProG Coder">
+                <label for="FullName">👤 Tên khách hàng</label>
+                <input id="FullName" name="FullName" type="text" value="@User.Identity.Name">
             </div>
-            <br />
+
             <div class="form-group">
-                <label for="Amount">Số tiền</label>
-                <input class="form-control"
-                       id="Amount"
-                       name="Amount"
-                       type="text"
-                       value="10000">
+                <label for="Amount">💰 Số tiền</label>
+                <input id="Amount" name="Amount" type="text" value="10000">
             </div>
-            <br />
+
             <div class="form-group">
-                <label for="OrderInfo">Nội dung thanh toán</label>
-                <textarea class="form-control"
-                          cols="20"
-                          id="OrderInfo"
-                          name="OrderInfo"
-                          rows="2">Thanh toán tại ProG Coder</textarea>
+                <label for="OrderInfo">📝 Nội dung thanh toán</label>
+                <textarea id="OrderInfo" name="OrderInfo" rows="3">Thanh Toán Hội VIên </textarea>
             </div>
-            <br />
-            <button type="submit" class="btn btn-primary">Thanh toán (Checkout)</button>
+
+            <button type="submit">Thanh toán (Checkout)</button>
         </form>
     </div>
 </div>
+<style>
+    * {
+        box-sizing: border-box;
+    }
+    body {
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+    .payment-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
 
-<script>
-    $(document).ready(function () {
+    .payment-card {
+        background-color: #fff;
+        padding: 35px 40px;
+        border-radius: 20px;
+        border: 1px solid #ddd;
+        box-shadow: 0 12px 40px rgba(0, 0, 0, 0.1);
+        max-width: 500px;
+        width: 100%;
+        animation: fadeIn 0.5s ease-in-out;
+    }
 
-    });
-</script>
+    .momo-header {
+        text-align: center;
+        margin-bottom: 25px;
+    }
+
+    .momo-header img {
+        max-height: 60px;
+        margin-bottom: 10px;
+    }
+
+    .momo-header h2 {
+        font-size: 1.5rem;
+        color: #c2185b;
+        margin: 0;
+    }
+
+    .form-group {
+        margin-bottom: 20px;
+    }
+
+    .form-group label {
+        display: block;
+        font-weight: 600;
+        margin-bottom: 6px;
+        color: #444;
+    }
+
+    .form-group input,
+    .form-group textarea {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        font-size: 1rem;
+        background: #fff;
+        transition: all 0.3s;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+        border-color: #d81b60;
+        box-shadow: 0 0 5px rgba(216, 27, 96, 0.3);
+        outline: none;
+    }
+
+    button[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        background-color: #d81b60;
+        color: #fff;
+        border: none;
+        border-radius: 10px;
+        font-size: 1rem;
+        font-weight: bold;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
+
+    button[type="submit"]:hover {
+        background-color: #ad1457;
+    }
+</style>
+

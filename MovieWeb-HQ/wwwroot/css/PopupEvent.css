@@ -1,0 +1,192 @@
+﻿
+/* Overlay */
+.popup-overlay {
+    z-index : 9999;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.85);
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: auto; /* đảm bảo overlay nhận sự kiện, không để xuyên qua */
+}
+
+/* Nội dung popup */
+.popup-content {
+    background-color: #F9DAA7;
+    width: 90%;
+    max-width: 1200px;
+    border-radius: 15px;
+    position: relative;
+    padding: 20px;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    animation: fadeIn 0.4s ease;
+}
+
+/* Close */
+.close-btn {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 28px;
+    color: #000;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Layout 2 cột */
+.popup-body {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+/* Bên trái */
+.popup-left {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    flex-direction: row; /* ảnh nằm ngang */
+    gap: 10px; /* khoảng cách giữa 2 ảnh */
+    justify-content: center;
+    align-items: center;
+    background-image: url('/uploads/behind-hero.webp'); /* Đường dẫn đến ảnh nền */
+    background-size: cover; /* Ảnh phủ toàn bộ khu vực */
+    background-position: center; /* Căn giữa ảnh */
+    border-radius: 10px; /* Bo góc như ảnh bên trong */
+    padding: 10px; 
+}
+
+    .popup-left img {
+        width: 48%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+.popup-left1 {
+    flex: 1;
+    max-width: 40%;
+    display: flex;
+    flex-direction: row; /* ảnh nằm ngang */
+    gap: 10px; /* khoảng cách giữa 2 ảnh */
+    justify-content: center;
+    align-items: center;
+}
+
+    .popup-left1 img {
+        width: 90%;
+        height: auto;
+        border-radius: 10px;
+        object-fit: cover;
+    }
+    
+/* Bên phải */
+    .popup-right {
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Tiêu đề */
+.popup-header {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+    .popup-header h2 {
+        font-size: 26px;
+        margin: 0;
+        color: #c0392b;
+    }
+
+    .popup-header p {
+        font-size: 16px;
+        color: #333;
+    }
+
+/* Danh sách phim: hiển thị theo hàng ngang */
+.popup-movies {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    padding-bottom: 10px;
+}
+
+/* Thu nhỏ card phim */
+.movie-card {
+    background: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    width: 140px; /* hoặc 150px tùy ý */
+    flex-shrink: 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+    /* Ảnh phim */
+    .movie-card img {
+        width: 100%;
+        height: 180px;
+        object-fit: cover;
+        border-radius: 6px;
+    }
+
+    /* Tên phim */
+    .movie-card p {
+        margin: 6px 0 !important;
+        font-weight: bold;
+        color: #000; /* Tên phim màu đen */
+        font-size: 10px !important;
+        width: auto !important;
+
+    }
+
+    /* Nút xem phim */
+    .movie-card a {
+        background: #e74c3c;
+        color: white;
+        padding: 6px 12px;
+        border-radius: 4px;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 13px;
+        margin-bottom: 5px;
+    }
+
+        .movie-card a:hover {
+            background: #c0392b;
+        }
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .popup-body {
+        flex-direction: column;
+    }
+
+    .popup-left, .popup-right {
+        max-width: 100%;
+    }
+
+    .popup-movies {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+

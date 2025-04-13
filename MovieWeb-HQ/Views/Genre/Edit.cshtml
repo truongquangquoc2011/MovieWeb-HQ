@@ -1,10 +1,82 @@
 ﻿@model Genre
 
-<h2>Chỉnh sửa thể loại</h2>
-<form asp-controller="Genre" asp-action="Edit" method="post">
-    <input type="hidden" name="GenreID" value="@Model.GenreID" />
-    <label for="GenreName">Tên thể loại:</label>
-    <input type="text" name="GenreName" value="@Model.GenreName" required />
-    <button type="submit" class="btn btn-edit">💾 Lưu</button>
-</form>
+<div class="form-container">
+    <h2 class="form-title">✏️ Chỉnh sửa Thể loại</h2>
+    <form asp-controller="Genre" asp-action="Edit" method="post">
+        <input type="hidden" name="GenreID" value="@Model.GenreID" />
 
+        <label for="GenreName" class="form-label">Tên thể loại:</label>
+        <input type="text" name="GenreName" value="@Model.GenreName" required class="form-input" />
+
+        <button type="submit" class="btn btn-edit">💾 Lưu</button>
+    </form>
+</div>
+<style>
+    body {
+      
+        background: linear-gradient(to right, #141e30, #243b55);
+        color: white;
+        margin: 0;
+        padding: 0;
+    }
+
+    .form-container {
+        max-width: 500px;
+        margin: 100px auto;
+        padding: 30px;
+        background: rgba(255, 255, 255, 0.08);
+        backdrop-filter: blur(10px);
+        border-radius: 20px;
+        box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+        text-align: center;
+    }
+
+    .form-title {
+        font-size: 26px;
+        font-weight: bold;
+        margin-bottom: 25px;
+        color: #00d4ff;
+    }
+
+    .form-label {
+        display: block;
+        font-size: 18px;
+        margin-bottom: 8px;
+        text-align: left;
+    }
+
+    .form-input {
+        width: 100%;
+        padding: 10px;
+        font-size: 16px;
+        border-radius: 8px;
+        border: none;
+        outline: none;
+        margin-bottom: 20px;
+        background: rgba(255, 255, 255, 0.2);
+        color: white;
+    }
+
+        .form-input::placeholder {
+            color: #ddd;
+        }
+
+    .btn {
+        padding: 10px 18px;
+        border: none;
+        border-radius: 8px;
+        font-size: 16px;
+        cursor: pointer;
+        color: white;
+        text-decoration: none;
+        transition: background 0.3s ease;
+    }
+
+    .btn-edit {
+        background: #ffc107;
+    }
+
+        .btn-edit:hover {
+            background: #e0a800;
+        }
+</style>
